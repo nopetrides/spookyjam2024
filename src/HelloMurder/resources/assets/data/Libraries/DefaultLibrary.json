@@ -1,0 +1,26 @@
+{
+  "$type": "HelloMurder.Assets.LibraryAsset",
+  "MainMenu": "e09343c5-19b5-419d-88f4-f06ed35a4752",
+  "PauseMenuPrefab": "00000000-0000-0000-0000-000000000000",
+  "GameOver": "00000000-0000-0000-0000-000000000000",
+  "SplashScreen": "00000000-0000-0000-0000-000000000000",
+  "GameOverScreen": "00000000-0000-0000-0000-000000000000",
+  "MurderLogo": "bb28a45f-873b-9eef-0342-25384770d9b8",
+  "FmodLogo": "195b9b47-bedf-17ec-da85-898961bb4d6d",
+  "UiNavigate": {
+    "Data1": -510789810,
+    "Data2": 1142427010,
+    "Data3": -210206050,
+    "Data4": -1573672540,
+    "Path": "event:/MenuNavigation"
+  },
+  "UiSelect": {
+    "Data1": 1112623748,
+    "Data2": 1153296169,
+    "Data3": -1816526435,
+    "Data4": 1251898741,
+    "Path": "event:/MenuSelect"
+  },
+  "Name": "DefaultLibrary",
+  "Guid": "64a1594a-df8e-4e25-a5e3-7015addffb9b"
+}

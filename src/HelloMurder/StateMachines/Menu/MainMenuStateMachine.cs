@@ -10,6 +10,10 @@ using Murder.Core.Geometry;
 using Murder.Core.Graphics;
 using Murder.Core.Input;
 using Murder.Services;
+using HelloMurder.Services;
+using Murder.Core.Sounds;
+using HelloMurder.Core.Sounds.Fmod;
+using HelloMurder.Core.Sounds;
 
 namespace HelloMurder.StateMachines
 {
@@ -50,14 +54,17 @@ namespace HelloMurder.StateMachines
 
             while (true)
             {
+                int previousInput = _menuInfo.Selection;
+
                 if (Game.Input.VerticalMenu(ref _menuInfo))
                 {
+                    Game.Sound.PlayEvent(LibraryServices.GetLibrary().UiSelect, new PlayEventInfo());
+
                     switch (_menuInfo.Selection)
                     {
                         case 0: //  Continue Game
                             Guid? targetWorld = MurderSaveServices.LoadSaveAndFetchTargetWorld(0);
                             Game.Instance.QueueWorldTransition(targetWorld ?? _newGameWorld);
-
                             break;
 
                         case 1: //  New Game
@@ -78,6 +85,11 @@ namespace HelloMurder.StateMachines
                     }
                 }
 
+                if (previousInput != _menuInfo.Selection)
+                {
+                    Game.Sound.PlayEvent(LibraryServices.GetLibrary().UiNavigate, new PlayEventInfo());
+                }
+
                 yield return Wait.NextFrame;
             }
         }
@@ -89,8 +101,12 @@ namespace HelloMurder.StateMachines
 
             while (true)
             {
+                int previousInput = _menuInfo.Selection;
+
                 if (Game.Input.VerticalMenu(ref _menuInfo))
                 {
+                    Game.Sound.PlayEvent(LibraryServices.GetLibrary().UiSelect, new PlayEventInfo());
+
                     switch (_menuInfo.Selection)
                     {
                         case 0: // Tweak sound
@@ -120,6 +136,11 @@ namespace HelloMurder.StateMachines
                         default:
                             break;
                     }
+                }
+
+                if (previousInput != _menuInfo.Selection)
+                {
+                    Game.Sound.PlayEvent(LibraryServices.GetLibrary().UiNavigate, new PlayEventInfo());
                 }
 
                 yield return Wait.NextFrame;

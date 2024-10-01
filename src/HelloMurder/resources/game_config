@@ -1,5 +1,20 @@
 {
-  "$type": "Murder.Assets.GameProfile",
+  "$type": "HelloMurder.Assets.HelloMurderProfile",
+  "Library": "64a1594a-df8e-4e25-a5e3-7015addffb9b",
+  "MusicBus": {
+    "Data1": 1886547801,
+    "Data2": 1211098557,
+    "Data3": 1372386460,
+    "Data4": 707824328,
+    "Path": "bus:/Music"
+  },
+  "SoundBus": {
+    "Data1": -928881160,
+    "Data2": 1273512591,
+    "Data3": -1349333881,
+    "Data4": 1166340744,
+    "Path": "bus:/Sound"
+  },
   "AtlasFolderName": "atlas/",
   "ContentAsepritePath": "aseprite/",
   "FontPath": "shaders/",
@@ -12,20 +27,20 @@
   "AssetResourcesPath": "assets/",
   "ContentECSPath": "ecs/",
   "GenericAssetsPath": "data/",
-  "GameWidth": 640,
-  "GameHeight": 320,
+  "GameWidth": 320,
+  "GameHeight": 180,
   "GameScale": 2,
   "FeedbackUrl": "",
   "FeedbackKey": "changeme",
   "ResizeStyle": {
-    "ResizeMode": 3,
-    "SnapToInteger": 0.25,
-    "RoundingMode": 2,
+    "ResizeMode": 2,
+    "SnapToInteger": 1,
+    "RoundingMode": 0,
     "PositiveApectRatioAllowance": 0.5,
     "NegativeApectRatioAllowance": 0.1
   },
   "Fullscreen": false,
-  "TargetFps": 60,
+  "TargetFps": 144,
   "FixedUpdateFactor": 2,
   "IsVSyncEnabled": false,
   "ShowUiDebug": true,
@@ -186,22 +201,23 @@
     "DialogueBtnStepBack": "acdd67d5-64da-333f-f96c-dfadf9857dce",
     "DialogueBtnStepForward": "bbbaf440-1261-2598-8af2-b8d0e9e6922e",
     "SoundImage": "1ad61775-94d2-0765-a254-f16d6c8a3d4d",
-    "MusicImage": "2a98ce49-1e0a-9109-026f-3392d992e44d"
+    "MusicImage": "2a98ce49-1e0a-9109-026f-3392d992e44d",
+    "ListenerImage": "2a98ce49-1e0a-9109-026f-3392d992e44d"
   },
   "BackColor": {
-    "R": 0.12156863,
-    "G": 0.15294118,
-    "B": 0.23921569,
+    "R": 0,
+    "G": 0,
+    "B": 0,
     "A": 1
   },
-  "MissingImage": "3c4ec0fa-0d0c-4f0f-9cb7-079bb9734a26",
+  "MissingImage": "916ca5c0-cd81-0be7-dca6-502de714d3a1",
   "LocalizationResources": {
-    "English": "2c73a6f8-51dc-4bfc-87a8-d9b3f0835af7",
-    "Portuguese": "4219ee72-8fb3-467f-adfc-b0116ff2f048"
+    "English": "3ee8226a-d719-4ef3-8431-7ca2fd2ce9ec",
+    "Portuguese": "aa7a4aeb-ff03-4cc7-9ee2-2d8f4a5fafc1"
   },
   "MinimumVelocityForSweep": 6,
   "Name": "Game Profile",
-  "Guid": "70ca35f4-bbb2-4de1-b2a3-27eab3f49c1f",
+  "Guid": "7f5bab83-41d8-4c9f-89b9-9a8f686627a8",
   "scalingFilter": false,
   "DefaultPalette": "images/murder_palette"
 }

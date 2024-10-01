@@ -11,6 +11,7 @@
       "Item2": true
     }
   ],
+  "systemsToRemove": [],
   "folders": {
     "Room": [
       "5d34f9a7-91d0-4142-82eb-9e1393c88297",
@@ -648,7 +649,7 @@
       "IsDeactivated": false,
       "ActivateWithParent": false,
       "guid": "fc3ef0f7-b77a-4641-a9c9-f0a02d38cabc",
-      "name": "Test",
+      "name": "DialogueTest",
       "components": {
         "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.PositionComponent",
@@ -659,10 +660,10 @@
           "$type": "HelloMurder.Components.DialogueUiComponent",
           "Content": [
             {
-              "Id": "892db261-ec18-41ff-ba71-65094f89495e"
+              "Id": "d787d642-bd92-4a95-8345-e45e011a429c"
             },
             {
-              "Id": "6693dcc2-7876-4e4e-a10b-aaf93d814759"
+              "Id": "2b3e8fd9-f35b-4748-b211-fd9e5ef1e533"
             }
           ]
         }
