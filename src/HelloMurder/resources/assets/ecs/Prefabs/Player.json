@@ -63,6 +63,19 @@
           "B": 0,
           "A": 1
         }
+      },
+      "HelloMurder.Components.PlayerComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "HelloMurder.Components.PlayerComponent"
+      },
+      "Murder.Components.AgentComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.AgentComponent",
+        "Speed": 100,
+        "Acceleration": 50,
+        "Friction": 0.927
+      },
+      "Murder.Components.FacingComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.FacingComponent",
+        "Angle": 0
       }
     }
   }

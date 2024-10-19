@@ -1,8 +1,11 @@
 ﻿using HelloMurder.Assets;
+using HelloMurder.Core.Input;
 using HelloMurder.Core.Sounds;
 using HelloMurder.Data;
+using Microsoft.Xna.Framework.Input;
 using Murder;
 using Murder.Assets;
+using Murder.Core.Input;
 using Murder.Core.Sounds;
 using Murder.Save;
 using Murder.Serialization;
@@ -28,4 +31,14 @@ public class HelloMurderGame : IMurderGame
     public ISoundPlayer CreateSoundPlayer() => new FmodSoundPlayer();
 
     public GamePreferences CreateGamePreferences() => new HelloMurderPreferences();
+
+    public void Initialize()
+    {
+        Game.Input.Register(
+            InputAxis.Movement,
+            new InputButtonAxis(Keys.W, Keys.A, Keys.S, Keys.D)
+            );
+
+        Game.Input.Register(1, Keys.Space);
+    }
 }

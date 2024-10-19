@@ -4,6 +4,12 @@ using Bang.Systems;
 using Murder.Components;
 using Murder;
 using HelloMurder.Components;
+using Murder.Utilities;
+using Murder.Helpers;
+using System.Numerics;
+using HelloMurder.Core.Input;
+using HelloMurder.Services;
+using Murder.Core.Sounds;
 
 namespace HelloMurder.Systems
 {
@@ -22,6 +28,9 @@ namespace HelloMurder.Systems
     public class PlayerInputSystem : IUpdateSystem, IFixedUpdateSystem
     {
 
+        private Vector2 _cachedInputAxis = Vector2.Zero;
+        private bool _inputPressed = false;
+
         /// <summary>
         ///     Called every fixed update.
         ///     We can apply input values to fixed updating components such as physics components.
@@ -33,6 +42,19 @@ namespace HelloMurder.Systems
             foreach (Entity entity in context.Entities)
             {
                 // Send entity messages or use entity extensions to update relevant entities
+                bool moved = _cachedInputAxis.HasValue();
+
+                if (moved)
+                {
+                    Direction direction = DirectionHelper.FromVector(_cachedInputAxis);
+                    entity.SetAgentImpulse(_cachedInputAxis, direction);
+                }
+
+                if (_inputPressed)
+                {
+                    Game.Sound.PlayEvent(LibraryServices.GetLibrary().UiSelect, new PlayEventInfo());
+                    _inputPressed = false;
+                }
             }
         }
 
@@ -45,6 +67,12 @@ namespace HelloMurder.Systems
         public void Update(Context context)
         {
             // Read from Game.Input
+
+            _cachedInputAxis = Game.Input.GetAxis(InputAxis.Movement).Value;
+            if (Game.Input.Pressed(1))
+            {
+                _inputPressed = true;
+            }
         }
     }
 }

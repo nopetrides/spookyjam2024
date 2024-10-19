@@ -11,6 +11,10 @@
     {
       "Item1": "Murder.Systems.CalculatePathfindSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
       "Item2": true
+    },
+    {
+      "Item1": "HelloMurder.Systems.PlayerInputSystem, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Item2": true
     }
   ],
   "features": []
