@@ -24,35 +24,15 @@
         "x": 0,
         "y": 0
       },
-      "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "Murder.Components.SpriteComponent",
-        "TargetSpriteBatch": 0,
-        "AnimationGuid": "daf91d39-f280-4c83-f2ac-cef2f8c16dc8",
-        "HighlightStyle": 0,
-        "NextAnimations": [],
-        "YSortOffset": 0,
-        "Offset": {
-          "X": 0.5,
-          "Y": 1
-        },
-        "RotateWithFacing": false,
-        "FlipWithFacing": false,
-        "UseUnscaledTime": false
-      },
       "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.ColliderComponent",
         "Shapes": [
           {
-            "$type": "Murder.Core.Geometry.BoxShape",
+            "$type": "Murder.Core.Geometry.CircleShape",
+            "Radius": 8,
             "Offset": {
               "X": 0,
               "Y": 0
-            },
-            "Width": 16,
-            "Height": 16,
-            "Origin": {
-              "X": 0.5,
-              "Y": 1
             }
           }
         ],
@@ -70,12 +50,64 @@
       "Murder.Components.AgentComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.AgentComponent",
         "Speed": 100,
-        "Acceleration": 50,
+        "Acceleration": 150,
         "Friction": 0.927
       },
       "Murder.Components.FacingComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.FacingComponent",
-        "Angle": 0
+        "Angle": 0,
+        "direction": 0
+      },
+      "Murder.Components.AgentSpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.AgentSpriteComponent",
+        "AnimationGuid": "1c823480-818b-7a22-e40e-b0a77c451f5a",
+        "YSortOffset": 0,
+        "TargetSpriteBatch": 0,
+        "IdlePrefix": "idle_",
+        "WalkPrefix": "walk_"
+      },
+      "Murder.Components.SpriteFacingComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.SpriteFacingComponent",
+        "AngleStart": -0.3926991,
+        "DefaultSuffix": "ne",
+        "DefaultFlip": false,
+        "FacingInfo": [
+          {
+            "AngleSize": 0.7853982,
+            "Suffix": "e",
+            "Flip": false
+          },
+          {
+            "AngleSize": 0.7853982,
+            "Suffix": "se",
+            "Flip": false
+          },
+          {
+            "AngleSize": 0.7853982,
+            "Suffix": "s",
+            "Flip": false
+          },
+          {
+            "AngleSize": 0.7853982,
+            "Suffix": "se",
+            "Flip": true
+          },
+          {
+            "AngleSize": 0.7853982,
+            "Suffix": "e",
+            "Flip": true
+          },
+          {
+            "AngleSize": 0.7853982,
+            "Suffix": "ne",
+            "Flip": true
+          },
+          {
+            "AngleSize": 0.7853982,
+            "Suffix": "n",
+            "Flip": false
+          }
+        ]
       }
     }
   }
