@@ -39,6 +39,10 @@
     {
       "Item1": "Murder.Systems.StaticInCameraSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
       "Item2": true
+    },
+    {
+      "Item1": "HelloMurder.Systems.CameraFollowSystem, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Item2": true
     }
   ],
   "features": []

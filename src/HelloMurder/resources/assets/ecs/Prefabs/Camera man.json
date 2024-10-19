@@ -22,7 +22,7 @@
       "Murder.Components.CameraFollowComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.CameraFollowComponent",
         "Enabled": true,
-        "Style": 0
+        "Style": 3
       },
       "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.PositionComponent",
