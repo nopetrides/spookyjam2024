@@ -10,6 +10,7 @@ using Murder.Utilities;
 using System.Numerics;
 using Murder;
 
+
 namespace HelloMurder.Systems
 {
     [Filter(kind: ContextAccessorKind.Read, typeof(CameraFollowComponent), typeof(IMurderTransformComponent))]
@@ -85,14 +86,20 @@ namespace HelloMurder.Systems
                 }
                 else
                 {
-                    if (cameraFollow.Style == CameraStyle.Perfect)
-                    {
-                        cameraman.SetTransform(new PositionComponent(targetPosition));
-                        cameramanPosition = targetPosition;
-                    }
-                    else
-                    {
-                        Point deadzone = cameraFollow.Style == CameraStyle.DeadZone ? new(24, 24) : Point.Zero;
+                    /*
+                     * Bit of a hack here to override CameraStyle behaviour
+                     * so that we don't have to modify Murder core to add a new Room-based CameraStyle
+                     */
+
+                    //if (cameraFollow.Style == CameraStyle.Perfect)
+                    //{
+                    //    cameraman.SetTransform(new PositionComponent(targetPosition));
+                    //    cameramanPosition = targetPosition;
+                    //}
+                    //else
+                    //{
+                        //Point deadzone = cameraFollow.Style == CameraStyle.DeadZone ? new(24, 24) : Point.Zero;
+                        Point deadzone = new(24, 24);
                         var delta = (cameramanPosition - targetPosition);
                         float lerpAmount = 1 - MathF.Pow(0.1f, Game.FixedDeltaTime);
                         float lerpedX = cameramanPosition.X;
@@ -107,13 +114,14 @@ namespace HelloMurder.Systems
                         }
                         cameramanPosition = new Vector2(lerpedX, lerpedY);
                         cameraman.SetTransform(new PositionComponent(cameramanPosition));
-                    }
+                    //}
                 }
             }
 
             Vector2 finalPosition = cameramanPosition - new Vector2(camera.Width, camera.Height) / 2f;
 
-            if (cameraFollow.Style == CameraStyle.Room && _currentRoom is not null)
+            //if (cameraFollow.Style == CameraStyle.Room && _currentRoom is not null)
+            if (_currentRoom is not null)
                 finalPosition = _currentRoom.Clamp(finalPosition, camera.Bounds);
             else if (context.World.TryGetUnique<MapComponent>() is MapComponent map && map.Map != null)
                 finalPosition = ClampBounds(map.Width, map.Height, camera, finalPosition);
