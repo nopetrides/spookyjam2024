@@ -43,6 +43,10 @@
     {
       "Item1": "Murder.Systems.Physics.SATPhysicsSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
       "Item2": true
+    },
+    {
+      "Item1": "HelloMurder.Systems.Interactions.CodeInteractableSystem, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Item2": true
     }
   ],
   "features": []
