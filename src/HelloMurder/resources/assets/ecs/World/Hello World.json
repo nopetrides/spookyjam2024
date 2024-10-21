@@ -955,8 +955,8 @@
       "components": {
         "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.PositionComponent",
-          "x": 457,
-          "y": 466
+          "x": 458,
+          "y": 509
         }
       },
       "guid": "432e3c2f-31a9-43f9-86e6-620b11168404",
@@ -975,8 +975,8 @@
       "components": {
         "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.PositionComponent",
-          "x": 578,
-          "y": 453
+          "x": 603,
+          "y": 526
         },
         "HelloMurder.Components.CodeEntryInteractableComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "HelloMurder.Components.CodeEntryInteractableComponent",

@@ -4,17 +4,21 @@ using Bang.Contexts;
 using Bang.Entities;
 using Bang.Systems;
 using HelloMurder.Components;
+using HelloMurder.Core;
 using HelloMurder.Core.Input;
 using HelloMurder.Messages;
 using Murder;
+using Murder.Core.Graphics;
 using Murder.Diagnostics;
+using Murder.Services;
 using System.Numerics;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace HelloMurder.Systems.Interactions
 {
     [Filter(typeof(CodeEntryInteractableComponent))]
     [Messager(typeof(CodeEntryMessage), typeof(CodeEntryExitMessage))]
-    internal class CodeInteractableSystem : IMessagerSystem, IUpdateSystem, IFixedUpdateSystem
+    internal class CodeInteractableSystem : IMessagerSystem, IUpdateSystem, IFixedUpdateSystem, IMurderRenderSystem
     {
         public bool IsCodeEntryActive => _currentCode is not null && _enteredCodeIndex < _currentCode.Length;
         private CodeDirections[]? _currentCode;
@@ -22,6 +26,7 @@ namespace HelloMurder.Systems.Interactions
         private Vector2 _cachedDirectionInput = Vector2.Zero;
         private bool _inputPressed = false;
         private int _enteredCodeIndex = 0;
+        private string _codeOutput = "";
 
         public void OnMessage(World world, Entity entity, IMessage message)
         {
@@ -42,6 +47,7 @@ namespace HelloMurder.Systems.Interactions
             _cachedDirectionInput = Vector2.Zero;
             _inputPressed = false;
             _enteredCodeIndex = 0;
+            _codeOutput = "";
     }
 
         private void HandleCodeInteractionStart(Entity entity)
@@ -81,6 +87,7 @@ namespace HelloMurder.Systems.Interactions
 
             // todo - send this to DialogueUiSystem
             GameLogger.Log($"Code is {codeString}");
+            _codeOutput = codeString;
         }
 
         public void Update(Context context)
@@ -155,6 +162,30 @@ namespace HelloMurder.Systems.Interactions
 
             _cachedDirectionInput = newInput;
             _inputPressed = true;
+        }
+
+        public void Draw(RenderContext render, Context context)
+        {
+            if (!IsCodeEntryActive || string.IsNullOrEmpty(_codeOutput))
+            {
+                return;
+            }
+
+            int font = (int)MurderFonts.PixelFont;
+
+            RenderServices.DrawText(
+                render.UiBatch,
+                font,
+                _codeOutput,
+                new Vector2(x: render.Camera.Width / 2f, y: render.Camera.Height - 20),
+                maxWidth: 200,
+                _codeOutput.Length,
+                new DrawInfo(0.1f)
+                {
+                    Origin = new Vector2(.5f, 0),
+                    Color = Palette.Colors[1],
+                    Shadow = Palette.Colors[3],
+                });
         }
     }
 }
