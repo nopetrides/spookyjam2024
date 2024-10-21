@@ -1,0 +1,72 @@
+{
+  "$type": "Murder.Assets.PrefabAsset",
+  "ShowOnPrefabSelector": false,
+  "Dimensions": {
+    "Origin": {
+      "X": 0,
+      "Y": 0
+    },
+    "Size": {
+      "X": 0,
+      "Y": 0
+    }
+  },
+  "Name": "Door",
+  "Guid": "6f067a30-0cc8-4e4f-a65e-4d67c9b38f0c",
+  "entity": {
+    "IsDeactivated": false,
+    "ActivateWithParent": false,
+    "guid": "020a0dd5-f3d9-49af-823a-49b7c1747841",
+    "name": "",
+    "components": {
+      "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.PositionComponent",
+        "x": 0,
+        "y": 0
+      },
+      "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.ColliderComponent",
+        "Shapes": [
+          {
+            "$type": "Murder.Core.Geometry.BoxShape",
+            "Offset": {
+              "X": 0,
+              "Y": 0
+            },
+            "Width": 16,
+            "Height": 16,
+            "Origin": {
+              "X": 0.5,
+              "Y": 0.5
+            }
+          }
+        ],
+        "Layer": 1,
+        "DebugColor": {
+          "R": 0.99609375,
+          "G": 0.47265625,
+          "B": 0.7734375,
+          "A": 1
+        }
+      },
+      "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.SpriteComponent",
+        "TargetSpriteBatch": 0,
+        "AnimationGuid": "e58ce1db-62a9-53fb-f78d-50b702b5d0bf",
+        "HighlightStyle": 0,
+        "NextAnimations": [],
+        "YSortOffset": 0,
+        "Offset": {
+          "X": 0.5,
+          "Y": 0.5
+        },
+        "RotateWithFacing": false,
+        "FlipWithFacing": false,
+        "UseUnscaledTime": false
+      },
+      "HelloMurder.Components.DoorComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "HelloMurder.Components.DoorComponent"
+      }
+    }
+  }
+}

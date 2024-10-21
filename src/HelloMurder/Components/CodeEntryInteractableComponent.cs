@@ -1,9 +1,10 @@
 ﻿using Bang.Components;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Bang.Systems;
+using Microsoft.Xna.Framework;
+using Murder.Attributes;
+using Murder.Prefabs;
+using Newtonsoft.Json;
+using System.Runtime.Versioning;
 
 namespace HelloMurder.Components
 {
@@ -18,6 +19,9 @@ namespace HelloMurder.Components
 
     public readonly struct CodeEntryInteractableComponent : IComponent
     {
+        [JsonProperty, InstanceId]
+        public readonly Guid DoorToOpen = Guid.Empty;
+
         private const int DEFAULT_CODE_LENGTH = 4;
         public readonly CodeDirections[] Code;
 

@@ -18,7 +18,8 @@
       "220b08d1-2193-4cfa-800f-8582eba2c0df",
       "fc3ef0f7-b77a-4641-a9c9-f0a02d38cabc",
       "7605d074-372d-4d7c-8465-d0b0363fd057",
-      "432e3c2f-31a9-43f9-86e6-620b11168404"
+      "432e3c2f-31a9-43f9-86e6-620b11168404",
+      "57da0b19-8123-4dd0-a88e-f93254fc7823"
     ],
     "FirstLabRoom": [
       "f43706ce-8143-4a4b-9b98-62fef194bb69"
@@ -957,6 +958,16 @@
           "$type": "Murder.Components.PositionComponent",
           "x": 458,
           "y": 509
+        },
+        "HelloMurder.Components.CodeEntryInteractableComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "HelloMurder.Components.CodeEntryInteractableComponent",
+          "DoorToOpen": "57da0b19-8123-4dd0-a88e-f93254fc7823",
+          "Code": [
+            0,
+            1,
+            2,
+            3
+          ]
         }
       },
       "guid": "432e3c2f-31a9-43f9-86e6-620b11168404",
@@ -980,6 +991,7 @@
         },
         "HelloMurder.Components.CodeEntryInteractableComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "HelloMurder.Components.CodeEntryInteractableComponent",
+          "DoorToOpen": "00000000-0000-0000-0000-000000000000",
           "Code": [
             0,
             0,
@@ -1017,6 +1029,26 @@
       },
       "guid": "7605d074-372d-4d7c-8465-d0b0363fd057",
       "name": "CodeEntryInteractable_2"
+    },
+    "57da0b19-8123-4dd0-a88e-f93254fc7823": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "6f067a30-0cc8-4e4f-a65e-4d67c9b38f0c"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 385,
+          "y": 470
+        }
+      },
+      "guid": "57da0b19-8123-4dd0-a88e-f93254fc7823",
+      "name": "Door"
     }
   },
   "entitiesToFolder": {
@@ -1028,7 +1060,8 @@
     "c292743a-1e77-411a-81f4-dae811fd0a5f": "AnotherLabRoom",
     "07da213f-7bee-4234-8594-a311b7d99f75": "TheOtherLabRoom",
     "432e3c2f-31a9-43f9-86e6-620b11168404": "MainHallRoom",
-    "7605d074-372d-4d7c-8465-d0b0363fd057": "MainHallRoom"
+    "7605d074-372d-4d7c-8465-d0b0363fd057": "MainHallRoom",
+    "57da0b19-8123-4dd0-a88e-f93254fc7823": "MainHallRoom"
   },
   "entitiesToFilter": {}
 }

@@ -28,15 +28,40 @@ namespace HelloMurder.Systems.Interactions
         private int _enteredCodeIndex = 0;
         private string _codeOutput = "";
 
+        private Entity _doorToOpen;
+        private DoorComponent _door;
+
         public void OnMessage(World world, Entity entity, IMessage message)
         {
             if (message is CodeEntryMessage)
             {
-                HandleCodeInteractionStart(entity);
+                HandleCodeInteractionStart(entity,world);
                 return;
             }
 
             HandleCodeInteractionEnd(entity);
+        }
+
+        private void HandleCodeInteractionStart(Entity entity, World world)
+        {
+            GameLogger.Log("Entered code interaction area.");
+            var codeEntryComponent = entity.TryGetComponent<CodeEntryInteractableComponent>();
+
+            if (codeEntryComponent is null)
+            {
+                GameLogger.Log("Could not find CodeEntryInteractableComponent");
+                return;
+            }
+
+            FindDoor(world, codeEntryComponent);
+            DisplayCurrentCode();
+        }
+
+        private void FindDoor(World world, CodeEntryInteractableComponent? codeEntryComponent)
+        {
+            _currentCode = codeEntryComponent.Value.Code;
+            var doorGuid = codeEntryComponent.Value.DoorToOpen;
+            _doorToOpen = world.GetEntity(WorldServices.GuidToEntityId(world, doorGuid));
         }
 
         private void HandleCodeInteractionEnd(Entity entity)
@@ -48,21 +73,6 @@ namespace HelloMurder.Systems.Interactions
             _inputPressed = false;
             _enteredCodeIndex = 0;
             _codeOutput = "";
-    }
-
-        private void HandleCodeInteractionStart(Entity entity)
-        {
-            GameLogger.Log("Entered code interaction area.");
-            var codeEntryComponent = entity.TryGetComponent<CodeEntryInteractableComponent>();
-
-            if (codeEntryComponent is null)
-            {
-                GameLogger.Log("Could not find CodeEntryInteractableComponent");
-                return;
-            }
-
-            _currentCode = codeEntryComponent.Value.Code;
-            DisplayCurrentCode();
         }
 
         private void DisplayCurrentCode()
@@ -142,9 +152,17 @@ namespace HelloMurder.Systems.Interactions
             if(_enteredCodeIndex >= _currentCode.Length)
             {
                 GameLogger.Log($"Code entered Correctly! Good for you.");
+                OpenDoor();
             }
         }
-
+        private void OpenDoor()
+        {
+            if (_doorToOpen is not null)
+            {
+                _door = _doorToOpen.GetComponent<DoorComponent>();
+                _doorToOpen.AddOrReplaceComponent(_door.SetOpenStatus(true));
+            }
+        }
 
         public void FixedUpdate(Context context)
         {
