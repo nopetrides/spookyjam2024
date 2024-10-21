@@ -17,6 +17,7 @@
       "5d34f9a7-91d0-4142-82eb-9e1393c88297",
       "220b08d1-2193-4cfa-800f-8582eba2c0df",
       "fc3ef0f7-b77a-4641-a9c9-f0a02d38cabc",
+      "7605d074-372d-4d7c-8465-d0b0363fd057",
       "432e3c2f-31a9-43f9-86e6-620b11168404"
     ],
     "FirstLabRoom": [
@@ -960,6 +961,62 @@
       },
       "guid": "432e3c2f-31a9-43f9-86e6-620b11168404",
       "name": "CodeEntryInteractable"
+    },
+    "7605d074-372d-4d7c-8465-d0b0363fd057": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "0aecf913-646a-4640-9463-e9fec6f9a35b"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 578,
+          "y": 453
+        },
+        "HelloMurder.Components.CodeEntryInteractableComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "HelloMurder.Components.CodeEntryInteractableComponent",
+          "Code": [
+            0,
+            0,
+            2,
+            2,
+            1,
+            3
+          ]
+        },
+        "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.ColliderComponent",
+          "Shapes": [
+            {
+              "$type": "Murder.Core.Geometry.BoxShape",
+              "Offset": {
+                "X": -1,
+                "Y": -1
+              },
+              "Width": 16,
+              "Height": 16,
+              "Origin": {
+                "X": 0.5,
+                "Y": 0.5
+              }
+            }
+          ],
+          "Layer": 6,
+          "DebugColor": {
+            "R": 0.99609375,
+            "G": 0.47265625,
+            "B": 0.7734375,
+            "A": 1
+          }
+        }
+      },
+      "guid": "7605d074-372d-4d7c-8465-d0b0363fd057",
+      "name": "CodeEntryInteractable_2"
     }
   },
   "entitiesToFolder": {
@@ -970,7 +1027,8 @@
     "e46d0df6-3b6e-433a-9fed-b30e913a26ef": "SecondLabRoom",
     "c292743a-1e77-411a-81f4-dae811fd0a5f": "AnotherLabRoom",
     "07da213f-7bee-4234-8594-a311b7d99f75": "TheOtherLabRoom",
-    "432e3c2f-31a9-43f9-86e6-620b11168404": "MainHallRoom"
+    "432e3c2f-31a9-43f9-86e6-620b11168404": "MainHallRoom",
+    "7605d074-372d-4d7c-8465-d0b0363fd057": "MainHallRoom"
   },
   "entitiesToFilter": {}
 }

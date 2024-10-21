@@ -83,4 +83,8 @@
     <TrimmerRootAssembly Include="HelloMurder" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Interactions\" />
+  </ItemGroup>
+
 </Project>

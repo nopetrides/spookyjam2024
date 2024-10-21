@@ -84,7 +84,12 @@
             "interaction": {}
           }
         ],
-        "CustomExitMessages": [],
+        "CustomExitMessages": [
+          {
+            "$type": "Bang.Interactions.InteractiveComponent\u003CHelloMurder.Messages.CodeEntryExitInteraction\u003E",
+            "interaction": {}
+          }
+        ],
         "PlayerOnly": false
       },
       "Murder.Interactions.InteractorComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {

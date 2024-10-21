@@ -1,19 +1,22 @@
 ﻿using Bang;
-using Bang.Components;
 using Bang.Entities;
 using Bang.Interactions;
-using HelloMurder.Components;
 using Murder.Diagnostics;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace HelloMurder.Messages
 {
-    public readonly struct CodeEntryInteraction : IInteraction
+    public readonly struct CodeEntryExitInteraction : IInteraction
     {
         public void Interact(World world, Entity interactor, Entity? interacted)
         {
             GameLogger.Log("CodeEntryInteraction received from IInteraction");
 
-            interacted.SendMessage(new CodeEntryMessage());
+            interacted.SendMessage(new CodeEntryExitMessage());
         }
     }
 }

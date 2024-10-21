@@ -39,6 +39,11 @@ public class HelloMurderGame : IMurderGame
             new InputButtonAxis(Keys.W, Keys.A, Keys.S, Keys.D)
             );
 
+        Game.Input.Register(
+            InputAxis.CodeEntry,
+            new InputButtonAxis(Keys.Up, Keys.Left, Keys.Down, Keys.Right)
+            );
+
         Game.Input.Register(1, Keys.Space);
     }
 }
