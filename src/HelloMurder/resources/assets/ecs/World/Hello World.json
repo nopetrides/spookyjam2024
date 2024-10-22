@@ -18,10 +18,10 @@
       "220b08d1-2193-4cfa-800f-8582eba2c0df",
       "fc3ef0f7-b77a-4641-a9c9-f0a02d38cabc",
       "7605d074-372d-4d7c-8465-d0b0363fd057",
-      "432e3c2f-31a9-43f9-86e6-620b11168404",
-      "57da0b19-8123-4dd0-a88e-f93254fc7823"
+      "432e3c2f-31a9-43f9-86e6-620b11168404"
     ],
     "FirstLabRoom": [
+      "133617b5-c7e0-40e2-8b5f-f47b48e1e22b",
       "f43706ce-8143-4a4b-9b98-62fef194bb69"
     ],
     "SecondLabRoom": [
@@ -31,6 +31,7 @@
       "c292743a-1e77-411a-81f4-dae811fd0a5f"
     ],
     "TheOtherLabRoom": [
+      "57da0b19-8123-4dd0-a88e-f93254fc7823",
       "07da213f-7bee-4234-8594-a311b7d99f75"
     ]
   },
@@ -147,7 +148,7 @@
               0,
               0,
               0,
-              0,
+              1,
               1,
               0,
               0,
@@ -389,23 +390,10 @@
               1,
               1,
               1,
-              0,
-              0,
-              0,
               1,
               0,
               0,
               1,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              1,
-              1,
-              1,
-              0,
               0,
               0,
               1,
@@ -415,16 +403,13 @@
               0,
               0,
               0,
-              0,
-              0,
-              0,
-              0,
-              0,
+              1,
+              1,
+              1,
               1,
               0,
               0,
-              0,
-              0,
+              1,
               0,
               0,
               0,
@@ -469,7 +454,23 @@
               0,
               0,
               1,
+              1,
               0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
               0,
               0,
               1,
@@ -485,7 +486,7 @@
               0,
               0,
               1,
-              0,
+              1,
               0,
               0,
               1,
@@ -956,8 +957,8 @@
       "components": {
         "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.PositionComponent",
-          "x": 458,
-          "y": 509
+          "x": 425,
+          "y": 471
         },
         "HelloMurder.Components.CodeEntryInteractableComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "HelloMurder.Components.CodeEntryInteractableComponent",
@@ -986,12 +987,12 @@
       "components": {
         "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.PositionComponent",
-          "x": 603,
-          "y": 526
+          "x": 647,
+          "y": 478
         },
         "HelloMurder.Components.CodeEntryInteractableComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "HelloMurder.Components.CodeEntryInteractableComponent",
-          "DoorToOpen": "00000000-0000-0000-0000-000000000000",
+          "DoorToOpen": "133617b5-c7e0-40e2-8b5f-f47b48e1e22b",
           "Code": [
             0,
             0,
@@ -1043,12 +1044,32 @@
       "components": {
         "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.PositionComponent",
-          "x": 385,
-          "y": 470
+          "x": 395,
+          "y": 469
         }
       },
       "guid": "57da0b19-8123-4dd0-a88e-f93254fc7823",
-      "name": "Door"
+      "name": "Door_Other"
+    },
+    "133617b5-c7e0-40e2-8b5f-f47b48e1e22b": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "6f067a30-0cc8-4e4f-a65e-4d67c9b38f0c"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 676,
+          "y": 474
+        }
+      },
+      "guid": "133617b5-c7e0-40e2-8b5f-f47b48e1e22b",
+      "name": "Door_First"
     }
   },
   "entitiesToFolder": {
@@ -1061,7 +1082,8 @@
     "07da213f-7bee-4234-8594-a311b7d99f75": "TheOtherLabRoom",
     "432e3c2f-31a9-43f9-86e6-620b11168404": "MainHallRoom",
     "7605d074-372d-4d7c-8465-d0b0363fd057": "MainHallRoom",
-    "57da0b19-8123-4dd0-a88e-f93254fc7823": "MainHallRoom"
+    "57da0b19-8123-4dd0-a88e-f93254fc7823": "TheOtherLabRoom",
+    "133617b5-c7e0-40e2-8b5f-f47b48e1e22b": "FirstLabRoom"
   },
   "entitiesToFilter": {}
 }
