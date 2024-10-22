@@ -160,7 +160,7 @@ namespace HelloMurder.Systems.Interactions
             if (_doorToOpen is not null)
             {
                 _door = _doorToOpen.GetComponent<DoorComponent>();
-                _doorToOpen.AddOrReplaceComponent(_door.SetOpenStatus(true));
+                _doorToOpen.AddOrReplaceComponent(_door.SetOpenStatus(!_door.IsOpen));
             }
         }
 
