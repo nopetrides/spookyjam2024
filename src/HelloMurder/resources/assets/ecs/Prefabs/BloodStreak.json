@@ -1,0 +1,44 @@
+{
+  "$type": "Murder.Assets.PrefabAsset",
+  "ShowOnPrefabSelector": false,
+  "Dimensions": {
+    "Origin": {
+      "X": 0,
+      "Y": 0
+    },
+    "Size": {
+      "X": 0,
+      "Y": 0
+    }
+  },
+  "Name": "BloodStreak",
+  "Guid": "4a167663-74f3-47af-bb72-dc11f791c9a5",
+  "entity": {
+    "IsDeactivated": false,
+    "ActivateWithParent": false,
+    "guid": "35d81882-ef84-4bdf-81d0-496f355e1b46",
+    "name": "",
+    "components": {
+      "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.SpriteComponent",
+        "TargetSpriteBatch": 0,
+        "AnimationGuid": "ec5952e1-4cc9-115c-74d4-8ca0984e0140",
+        "HighlightStyle": 0,
+        "NextAnimations": [],
+        "YSortOffset": 0,
+        "Offset": {
+          "X": 0,
+          "Y": 0
+        },
+        "RotateWithFacing": false,
+        "FlipWithFacing": false,
+        "UseUnscaledTime": false
+      },
+      "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.PositionComponent",
+        "x": -11,
+        "y": 0
+      }
+    }
+  }
+}
