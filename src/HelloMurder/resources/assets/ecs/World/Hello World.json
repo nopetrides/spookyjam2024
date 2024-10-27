@@ -1383,6 +1383,20 @@
       },
       "guid": "d608544f-b02d-4a71-b0a0-d5db9998b957",
       "name": "BloodStreak"
+    },
+    "6f30603b-218d-4112-8d0b-c70d3911fdf7": {
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "guid": "6f30603b-218d-4112-8d0b-c70d3911fdf7",
+      "name": "GameplayStateMachine",
+      "components": {
+        "Bang.StateMachines.StateMachineComponent\u00601[[HelloMurder.StateMachines.Gameplay.GameplayStateMachine, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Bang.StateMachines.StateMachineComponent\u003CHelloMurder.StateMachines.Gameplay.GameplayStateMachine\u003E",
+          "routine": {
+            "cachedPersistedState": "Main"
+          }
+        }
+      }
     }
   },
   "entitiesToFolder": {

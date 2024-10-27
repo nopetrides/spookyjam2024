@@ -10,6 +10,7 @@ using System.Numerics;
 using HelloMurder.Core.Input;
 using HelloMurder.Services;
 using Murder.Core.Sounds;
+using HelloMurder.Core;
 
 namespace HelloMurder.Systems
 {
@@ -72,6 +73,14 @@ namespace HelloMurder.Systems
             if (Game.Input.Pressed(1))
             {
                 _inputPressed = true;
+            }
+            if (Game.Input.PressedAndConsume(InputButtons.Pause)
+                && !context.World.IsPaused
+                && context.World.GetEntitiesWith(typeof(DoNotPauseComponent)).Count() == 0)
+            {
+                LibraryServices.GetPauseMenuPrefab().Create(context.World);
+
+                Game.Sound.PlayEvent(LibraryServices.GetLibrary().UiNavigate, new PlayEventInfo());
             }
         }
     }

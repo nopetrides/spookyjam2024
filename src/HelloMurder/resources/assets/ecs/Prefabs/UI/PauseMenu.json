@@ -1,0 +1,34 @@
+{
+  "$type": "Murder.Assets.PrefabAsset",
+  "ShowOnPrefabSelector": false,
+  "Dimensions": {
+    "Origin": {
+      "X": 0,
+      "Y": 0
+    },
+    "Size": {
+      "X": 0,
+      "Y": 0
+    }
+  },
+  "Name": "UI/PauseMenu",
+  "Guid": "ce9b047a-43fc-45da-a9ad-f4e32a25c526",
+  "entity": {
+    "IsDeactivated": false,
+    "ActivateWithParent": false,
+    "guid": "3b9a4d8e-f1c6-4451-bcf9-941950274875",
+    "name": "",
+    "components": {
+      "Murder.Components.DoNotPauseComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.DoNotPauseComponent"
+      },
+      "Bang.StateMachines.StateMachineComponent\u00601[[HelloMurder.StateMachines.Menu.PauseMenuStateMachine, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Bang.StateMachines.StateMachineComponent\u003CHelloMurder.StateMachines.Menu.PauseMenuStateMachine\u003E",
+        "routine": {
+          "_mainMenuWorld": "e09343c5-19b5-419d-88f4-f06ed35a4752",
+          "cachedPersistedState": "StartPause"
+        }
+      }
+    }
+  }
+}

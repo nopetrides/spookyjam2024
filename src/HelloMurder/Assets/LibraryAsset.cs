@@ -25,6 +25,9 @@ namespace HelloMurder.Assets
         public Guid MainMenuWorld = Guid.Empty;
 
         [GameAssetId(typeof(WorldAsset))]
+        public Guid GameplayWorld = Guid.Empty;
+
+        [GameAssetId(typeof(WorldAsset))]
         public Guid GameOverWorld = Guid.Empty;
 
         #endregion
@@ -59,8 +62,11 @@ namespace HelloMurder.Assets
         public SoundEventId UiSelect;
 
         // Gameplay
+        public SoundEventId GameAmbience;
 
         // Music
+        public SoundEventId MainMenuMusic;
+        public SoundEventId EndScreen;
 
         #endregion
     }

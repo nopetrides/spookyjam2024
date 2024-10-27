@@ -3,7 +3,7 @@
     public class HelloMurderSaveData : Murder.Assets.SaveData
     {
         /// <summary>
-        /// Not correctly working in Save Data currently. See <see cref="Data.BombsAwayPreferences"/>
+        /// Not correctly working in Save Data currently. See <see cref="Data.HelloMurderPreferences"/>
         /// </summary>
         public int HighScore = 0;
 
