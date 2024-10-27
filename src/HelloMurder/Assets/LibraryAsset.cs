@@ -60,9 +60,27 @@ namespace HelloMurder.Assets
         // UI
         public SoundEventId UiNavigate;
         public SoundEventId UiSelect;
+        public SoundEventId UiCodeAppear;
+        public SoundEventId UiCodeEnter;
+        public SoundEventId UiCodeFailed;
+        public SoundEventId UiCodeComplete;
+        public SoundEventId UiCodeCancel;
 
         // Gameplay
         public SoundEventId GameAmbience;
+        public SoundEventId BreakingGlass;
+        public SoundEventId MonsterGroan;
+        public SoundEventId MonsterScream;
+        public SoundEventId MosterFootsteps;
+        public SoundEventId MonsterDripping;
+        public SoundEventId MonsterHissing;
+
+        public SoundEventId PlayerFootsteps;
+        public SoundEventId PlayerReadPaper;
+        public SoundEventId PlayerHeartbeat;
+        public SoundEventId PlayerHeavyBreathing;
+        public SoundEventId PlayerPickup;
+
 
         // Music
         public SoundEventId MainMenuMusic;

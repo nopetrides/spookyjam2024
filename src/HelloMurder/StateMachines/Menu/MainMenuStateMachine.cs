@@ -57,7 +57,8 @@ namespace HelloMurder.StateMachines
                 int previousInput = _menuInfo.Selection;
 
                 if (Game.Input.VerticalMenu(ref _menuInfo))
-                {
+                { 
+                    //ui input sounds
                     Game.Sound.PlayEvent(LibraryServices.GetLibrary().UiSelect, new PlayEventInfo());
 
                     switch (_menuInfo.Selection)
