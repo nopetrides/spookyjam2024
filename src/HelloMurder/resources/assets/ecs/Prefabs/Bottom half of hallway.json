@@ -1,0 +1,108 @@
+{
+  "$type": "Murder.Assets.PrefabAsset",
+  "ShowOnPrefabSelector": false,
+  "Dimensions": {
+    "Origin": {
+      "X": 0,
+      "Y": 0
+    },
+    "Size": {
+      "X": 0,
+      "Y": 0
+    }
+  },
+  "Name": "Bottom half of hallway",
+  "Guid": "b72186c3-7992-4153-8d7c-451d593fbd4b",
+  "entity": {
+    "IsDeactivated": false,
+    "ActivateWithParent": false,
+    "guid": "25441994-9f60-47de-a62c-2e5e008270be",
+    "name": "",
+    "components": {
+      "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.SpriteComponent",
+        "TargetSpriteBatch": 0,
+        "AnimationGuid": "c1493b69-fec4-08bf-7d4e-b4dc7defad9f",
+        "HighlightStyle": 0,
+        "NextAnimations": [],
+        "YSortOffset": 0,
+        "Offset": {
+          "X": 0,
+          "Y": 0
+        },
+        "RotateWithFacing": false,
+        "FlipWithFacing": false,
+        "UseUnscaledTime": false
+      },
+      "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.PositionComponent",
+        "x": 0,
+        "y": 0
+      },
+      "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.ColliderComponent",
+        "Shapes": [
+          {
+            "$type": "Murder.Core.Geometry.BoxShape",
+            "Offset": {
+              "X": 0,
+              "Y": 0
+            },
+            "Width": 66,
+            "Height": 50,
+            "Origin": {
+              "X": 0,
+              "Y": 0
+            }
+          },
+          {
+            "$type": "Murder.Core.Geometry.BoxShape",
+            "Offset": {
+              "X": 0,
+              "Y": 62
+            },
+            "Width": 66,
+            "Height": 118,
+            "Origin": {
+              "X": 0,
+              "Y": 0
+            }
+          },
+          {
+            "$type": "Murder.Core.Geometry.BoxShape",
+            "Offset": {
+              "X": 253,
+              "Y": 0
+            },
+            "Width": 67,
+            "Height": 96,
+            "Origin": {
+              "X": 0,
+              "Y": 0
+            }
+          },
+          {
+            "$type": "Murder.Core.Geometry.BoxShape",
+            "Offset": {
+              "X": 254,
+              "Y": 110
+            },
+            "Width": 66,
+            "Height": 70,
+            "Origin": {
+              "X": 0,
+              "Y": 0
+            }
+          }
+        ],
+        "Layer": 1,
+        "DebugColor": {
+          "R": 0.99609375,
+          "G": 0.47265625,
+          "B": 0.7734375,
+          "A": 1
+        }
+      }
+    }
+  }
+}
