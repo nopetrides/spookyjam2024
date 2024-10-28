@@ -18,7 +18,11 @@
       "220b08d1-2193-4cfa-800f-8582eba2c0df",
       "fc3ef0f7-b77a-4641-a9c9-f0a02d38cabc",
       "7605d074-372d-4d7c-8465-d0b0363fd057",
-      "900331a5-7e1b-4a66-b529-9ba81ebb06b1"
+      "900331a5-7e1b-4a66-b529-9ba81ebb06b1",
+      "b8fd3f1d-33f7-4159-a858-2702ab4e9721",
+      "223f8836-1834-4da3-9108-8f4ef1245a3d",
+      "0c39fe43-6d40-4376-8401-de07948198ca",
+      "d608544f-b02d-4a71-b0a0-d5db9998b957"
     ],
     "FirstLabRoom": [
       "133617b5-c7e0-40e2-8b5f-f47b48e1e22b",
@@ -1153,13 +1157,15 @@
       },
       "IsDeactivated": false,
       "ActivateWithParent": false,
-      "removeComponent": [],
+      "removeComponent": [
+        "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+      ],
       "childrenModifiers": {},
       "ignorePrefabChildren": false,
       "components": {
         "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.PositionComponent",
-          "x": 425,
+          "x": 426,
           "y": 471
         },
         "HelloMurder.Components.CodeEntryInteractableComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
@@ -1234,6 +1240,163 @@
       },
       "guid": "900331a5-7e1b-4a66-b529-9ba81ebb06b1",
       "name": "DoorTriggerInteractable_Another"
+    },
+    "b8fd3f1d-33f7-4159-a858-2702ab4e9721": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "e9dc3bed-017c-455d-a7e6-707420e6724b"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 414,
+          "y": 436
+        },
+        "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.ColliderComponent",
+          "Shapes": [
+            {
+              "$type": "Murder.Core.Geometry.BoxShape",
+              "Offset": {
+                "X": 1,
+                "Y": 9
+              },
+              "Width": 36,
+              "Height": 4,
+              "Origin": {
+                "X": 0,
+                "Y": 0
+              }
+            }
+          ],
+          "Layer": 1,
+          "DebugColor": {
+            "R": 0.99609375,
+            "G": 0.47265625,
+            "B": 0.7734375,
+            "A": 1
+          }
+        }
+      },
+      "guid": "b8fd3f1d-33f7-4159-a858-2702ab4e9721",
+      "name": "Desk"
+    },
+    "223f8836-1834-4da3-9108-8f4ef1245a3d": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "125bea23-f562-4b5f-814b-c9f8a7c728be"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 417,
+          "y": 425
+        },
+        "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.SpriteComponent",
+          "TargetSpriteBatch": 0,
+          "AnimationGuid": "ddb9815f-79a1-8a17-b602-5ffcdf9a2521",
+          "HighlightStyle": 0,
+          "NextAnimations": [],
+          "YSortOffset": 16,
+          "Offset": {
+            "X": 0.118,
+            "Y": 0.216
+          },
+          "RotateWithFacing": false,
+          "FlipWithFacing": false,
+          "UseUnscaledTime": false
+        }
+      },
+      "guid": "223f8836-1834-4da3-9108-8f4ef1245a3d",
+      "name": "Computer"
+    },
+    "0c39fe43-6d40-4376-8401-de07948198ca": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "2c366b61-5f33-4f4e-a0f8-ed62d72efdfb"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 455,
+          "y": 516
+        },
+        "Murder.Components.RotationComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.RotationComponent",
+          "Rotation": 4.164
+        }
+      },
+      "guid": "0c39fe43-6d40-4376-8401-de07948198ca",
+      "name": "BloodyFootprints"
+    },
+    "d608544f-b02d-4a71-b0a0-d5db9998b957": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "4a167663-74f3-47af-bb72-dc11f791c9a5"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 388,
+          "y": 446
+        },
+        "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.SpriteComponent",
+          "TargetSpriteBatch": 0,
+          "AnimationGuid": "ec5952e1-4cc9-115c-74d4-8ca0984e0140",
+          "HighlightStyle": 0,
+          "NextAnimations": [],
+          "YSortOffset": -10,
+          "Offset": {
+            "X": 0,
+            "Y": 0
+          },
+          "RotateWithFacing": false,
+          "FlipWithFacing": false,
+          "UseUnscaledTime": false
+        },
+        "Murder.Components.RotationComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.RotationComponent",
+          "Rotation": 0.201
+        }
+      },
+      "guid": "d608544f-b02d-4a71-b0a0-d5db9998b957",
+      "name": "BloodStreak"
+    },
+    "6f30603b-218d-4112-8d0b-c70d3911fdf7": {
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "guid": "6f30603b-218d-4112-8d0b-c70d3911fdf7",
+      "name": "GameplayStateMachine",
+      "components": {
+        "Bang.StateMachines.StateMachineComponent\u00601[[HelloMurder.StateMachines.Gameplay.GameplayStateMachine, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Bang.StateMachines.StateMachineComponent\u003CHelloMurder.StateMachines.Gameplay.GameplayStateMachine\u003E",
+          "routine": {
+            "cachedPersistedState": "Main"
+          }
+        }
+      }
     }
   },
   "entitiesToFolder": {
@@ -1250,7 +1413,11 @@
     "133617b5-c7e0-40e2-8b5f-f47b48e1e22b": "FirstLabRoom",
     "c52e4bf5-8cab-4953-b48d-59691aa5ed42": "TheOtherLabRoom",
     "a5ec7a7d-ab71-4fdd-badb-fabf82590b8e": "AnotherLabRoom",
-    "900331a5-7e1b-4a66-b529-9ba81ebb06b1": "MainHallRoom"
+    "900331a5-7e1b-4a66-b529-9ba81ebb06b1": "MainHallRoom",
+    "b8fd3f1d-33f7-4159-a858-2702ab4e9721": "MainHallRoom",
+    "223f8836-1834-4da3-9108-8f4ef1245a3d": "MainHallRoom",
+    "0c39fe43-6d40-4376-8401-de07948198ca": "MainHallRoom",
+    "d608544f-b02d-4a71-b0a0-d5db9998b957": "MainHallRoom"
   },
   "entitiesToFilter": {}
 }

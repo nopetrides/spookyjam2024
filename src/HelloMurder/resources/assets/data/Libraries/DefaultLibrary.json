@@ -1,10 +1,11 @@
 {
   "$type": "HelloMurder.Assets.LibraryAsset",
-  "MainMenu": "e09343c5-19b5-419d-88f4-f06ed35a4752",
-  "PauseMenuPrefab": "00000000-0000-0000-0000-000000000000",
-  "GameOver": "00000000-0000-0000-0000-000000000000",
-  "SplashScreen": "00000000-0000-0000-0000-000000000000",
-  "GameOverScreen": "00000000-0000-0000-0000-000000000000",
+  "MainMenuWorld": "e09343c5-19b5-419d-88f4-f06ed35a4752",
+  "GameplayWorld": "3bd26720-c3b1-44c1-b7c3-192d5656cc37",
+  "GameOverWorld": "4b4de6fe-6ae1-4ee9-88af-682a13575a10",
+  "PauseMenuPrefab": "ce9b047a-43fc-45da-a9ad-f4e32a25c526",
+  "SplashScreen": "ab3215ca-7dcc-13ab-fb60-11d58a76740b",
+  "GameOverScreen": "d602503d-4583-4c64-4bfc-fc5ce5022c72",
   "MurderLogo": "bb28a45f-873b-9eef-0342-25384770d9b8",
   "FmodLogo": "195b9b47-bedf-17ec-da85-898961bb4d6d",
   "UiNavigate": {
@@ -20,6 +21,27 @@
     "Data3": -1816526435,
     "Data4": 1251898741,
     "Path": "event:/MenuSelect"
+  },
+  "GameAmbience": {
+    "Data1": 1046697050,
+    "Data2": 1304195594,
+    "Data3": -981426525,
+    "Data4": -255077776,
+    "Path": "event:/GameAmbience"
+  },
+  "MainMenuMusic": {
+    "Data1": 1469358391,
+    "Data2": 1103425355,
+    "Data3": 1862232718,
+    "Data4": -840579736,
+    "Path": "event:/MainMenuMusic"
+  },
+  "EndScreen": {
+    "Data1": -1641575551,
+    "Data2": 1142659809,
+    "Data3": 1674188445,
+    "Data4": -922205877,
+    "Path": "event:/EndScreen"
   },
   "Name": "DefaultLibrary",
   "Guid": "64a1594a-df8e-4e25-a5e3-7015addffb9b"

@@ -1,0 +1,36 @@
+{
+  "$type": "Murder.Assets.WorldAsset",
+  "WorldName": "World",
+  "Order": 1,
+  "Name": "Boot",
+  "Guid": "d74ad0c7-4175-43f2-9a66-29f7def466a9",
+  "systems": [],
+  "features": [
+    {
+      "Item1": "4dc3c8b1-5b4a-4ca5-818c-f7763169e2e6",
+      "Item2": true
+    }
+  ],
+  "systemsToRemove": [],
+  "folders": {},
+  "filterFolders": {},
+  "entities": {
+    "e5c06d11-f5cb-4f1b-938f-bccafdd97d29": {
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "guid": "e5c06d11-f5cb-4f1b-938f-bccafdd97d29",
+      "name": "BootStateMachine",
+      "components": {
+        "Bang.StateMachines.StateMachineComponent\u00601[[HelloMurder.StateMachines.BootStateMachine, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Bang.StateMachines.StateMachineComponent\u003CHelloMurder.StateMachines.BootStateMachine\u003E",
+          "routine": {
+            "_nextWorld": "e09343c5-19b5-419d-88f4-f06ed35a4752",
+            "cachedPersistedState": "Main"
+          }
+        }
+      }
+    }
+  },
+  "entitiesToFolder": {},
+  "entitiesToFilter": {}
+}

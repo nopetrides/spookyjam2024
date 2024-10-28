@@ -14,18 +14,16 @@ using HelloMurder.Services;
 using Murder.Core.Sounds;
 using HelloMurder.Core.Sounds.Fmod;
 using HelloMurder.Core.Sounds;
+using HelloMurder.Data;
 
 namespace HelloMurder.StateMachines
 {
     public class MainMenuStateMachine : StateMachine
     {
-        [Serialize, GameAssetId(typeof(WorldAsset))]
-        private readonly Guid _newGameWorld = Guid.Empty;
-
         private MenuInfo _menuInfo = new();
 
         private MenuInfo GetMainMenuOptions() =>
-            new MenuInfo(new MenuOption[] { new(LocalizedResources.Menu_Continue, selectable: Game.Data.CanLoadSaveData(0)), 
+            new MenuInfo(new MenuOption[] { //new(LocalizedResources.Menu_Continue, selectable: Game.Data.CanLoadSaveData(0)), 
                 new(LocalizedResources.Menu_NewGame), new(LocalizedResources.Menu_Options), new(LocalizedResources.Menu_Exit) });
 
         private MenuInfo GetOptionOptions() =>
@@ -45,6 +43,8 @@ namespace HelloMurder.StateMachines
             Entity.SetCustomDraw(DrawMainMenu);
 
             _menuInfo.Select(Game.Data.CanLoadSaveData(0) ? 0 : 1);
+
+            Game.Sound.PlayEvent(LibraryServices.GetLibrary().MainMenuMusic, new PlayEventInfo() { Properties = SoundProperties.Persist | SoundProperties.StopOtherEventsInLayer | SoundProperties.SkipIfAlreadyPlaying });
         }
 
         private IEnumerator<Wait> Main()
@@ -57,26 +57,27 @@ namespace HelloMurder.StateMachines
                 int previousInput = _menuInfo.Selection;
 
                 if (Game.Input.VerticalMenu(ref _menuInfo))
-                {
+                { 
+                    //ui input sounds
                     Game.Sound.PlayEvent(LibraryServices.GetLibrary().UiSelect, new PlayEventInfo());
 
                     switch (_menuInfo.Selection)
                     {
-                        case 0: //  Continue Game
+                        /*case 0: //  Continue Game
                             Guid? targetWorld = MurderSaveServices.LoadSaveAndFetchTargetWorld(0);
-                            Game.Instance.QueueWorldTransition(targetWorld ?? _newGameWorld);
-                            break;
+                            Game.Instance.QueueWorldTransition(targetWorld ?? LibraryServices.GetLibrary().GameplayWorld);
+                            break;*/
 
-                        case 1: //  New Game
+                        case 0: //  New Game
                             Game.Data.DeleteAllSaves();
-                            Game.Instance.QueueWorldTransition(_newGameWorld);
+                            Game.Instance.QueueWorldTransition(LibraryServices.GetLibrary().GameplayWorld);
                             break;
 
-                        case 2: // Options
+                        case 1: // Options
                             yield return GoTo(Options);
                             break;
 
-                        case 3: //  Exit
+                        case 2: //  Exit
                             Game.Instance.QueueExitGame();
                             break;
 
@@ -109,16 +110,16 @@ namespace HelloMurder.StateMachines
 
                     switch (_menuInfo.Selection)
                     {
-                        case 0: // Tweak sound
-                            float volume = Game.Preferences.ToggleSoundVolumeAndSave();
+                        case 0: // Toggle sound
+                            float sound = Game.Preferences.ToggleSoundVolumeAndSave();
 
-                            _menuInfo.Options[0] = volume == 1 ? new(LocalizedResources.Menu_SoundsOn) : new(LocalizedResources.Menu_SoundsOff);
+                            _menuInfo.Options[0] = sound == 1 ? new(LocalizedResources.Menu_SoundsOn) : new(LocalizedResources.Menu_SoundsOff);
                             break;
 
-                        case 1: // Tweak music
-                            float sound = Game.Preferences.ToggleMusicVolumeAndSave();
+                        case 1: // Toggle music
+                            float music = Game.Preferences.ToggleMusicVolumeAndSave();
 
-                            _menuInfo.Options[1] = sound == 1 ? new(LocalizedResources.Menu_MusicOn) : new(LocalizedResources.Menu_MusicOff);
+                            _menuInfo.Options[1] = music == 1 ? new(LocalizedResources.Menu_MusicOn) : new(LocalizedResources.Menu_MusicOff);
                             break;
 
                         case 2: // Language

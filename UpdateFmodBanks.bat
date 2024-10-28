@@ -1,0 +1,1 @@
+robocopy ".\fmod_project\HelloMurder_FmodProject\Build\Desktop" ".\src\HelloMurder.Editor\bin\Debug\net8.0\resources\sounds\fmod" /mir

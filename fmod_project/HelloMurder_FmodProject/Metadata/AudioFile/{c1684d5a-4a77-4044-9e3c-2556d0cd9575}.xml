@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{c1684d5a-4a77-4044-9e3c-2556d0cd9575}">
+		<property name="assetPath">
+			<value>INXSNAIL-A2.WAV</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>328.99591836734692</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9ca9199e-38e7-4397-bedc-7d7e125ef55a}</destination>
+		</relationship>
+	</object>
+</objects>

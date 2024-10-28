@@ -18,7 +18,7 @@ namespace HelloMurder.Services
             if (Game.Data.TryGetActiveSaveData() is not HelloMurderSaveData save)
             {
                 // Right now, we are creating a new save if one is already not here.
-                save = (HelloMurderSaveData)Game.Data.CreateSave(1);
+                save = (HelloMurderSaveData)Game.Data.CreateSave();
             }
 
             return save;

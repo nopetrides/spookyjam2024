@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{53f3325a-43de-4d92-b3f8-3b0b8597544f}">
+		<property name="assetPath">
+			<value>SpiderismAttack.ogg</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>92.857142857142861</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9ca9199e-38e7-4397-bedc-7d7e125ef55a}</destination>
+		</relationship>
+	</object>
+</objects>
