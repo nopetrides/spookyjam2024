@@ -50,8 +50,12 @@ public class HelloMurderGame : IMurderGame
 
         // Registeres movement from wasd and arrow keys
         Game.Input.Register(MurderInputAxis.Movement,
-            new InputButtonAxis(Keys.W, Keys.A, Keys.S, Keys.D),
-            new InputButtonAxis(Keys.Up, Keys.Left, Keys.Down, Keys.Right));
+            new InputButtonAxis(Keys.W, Keys.A, Keys.S, Keys.D));
+        
+        // Registeres movement from wasd and arrow keys
+        //Game.Input.Register(MurderInputAxis.Movement,
+        //    new InputButtonAxis(Keys.W, Keys.A, Keys.S, Keys.D),
+        //    new InputButtonAxis(Keys.Up, Keys.Left, Keys.Down, Keys.Right));
 
         // Registers movement from left stick or dpad
         Game.Input.RegisterAxes(MurderInputAxis.Ui, stick);
