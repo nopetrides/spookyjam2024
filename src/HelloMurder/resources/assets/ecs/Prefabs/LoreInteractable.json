@@ -1,0 +1,95 @@
+{
+  "$type": "Murder.Assets.PrefabAsset",
+  "ShowOnPrefabSelector": true,
+  "Dimensions": {
+    "Origin": {
+      "X": 0,
+      "Y": 0
+    },
+    "Size": {
+      "X": 0,
+      "Y": 0
+    }
+  },
+  "Name": "LoreInteractable",
+  "Guid": "cfb4b91e-7baa-4da1-b56e-1e8fb7972a63",
+  "entity": {
+    "IsDeactivated": false,
+    "ActivateWithParent": false,
+    "guid": "6a4b3f61-fc18-4709-899d-4ca0f166b2db",
+    "name": "",
+    "components": {
+      "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.PositionComponent",
+        "x": 0,
+        "y": 0
+      },
+      "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.SpriteComponent",
+        "TargetSpriteBatch": 0,
+        "AnimationGuid": "e1e30903-b346-cd23-a4b1-4c87e091cfae",
+        "HighlightStyle": 0,
+        "NextAnimations": [],
+        "YSortOffset": 0,
+        "Offset": {
+          "X": 0.5,
+          "Y": 0.5
+        },
+        "RotateWithFacing": false,
+        "FlipWithFacing": false,
+        "UseUnscaledTime": false
+      },
+      "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.ColliderComponent",
+        "Shapes": [
+          {
+            "$type": "Murder.Core.Geometry.BoxShape",
+            "Offset": {
+              "X": 0,
+              "Y": 0
+            },
+            "Width": 16,
+            "Height": 16,
+            "Origin": {
+              "X": 0.5,
+              "Y": 0.5
+            }
+          }
+        ],
+        "Layer": 6,
+        "DebugColor": {
+          "R": 0.99609375,
+          "G": 0.47265625,
+          "B": 0.7734375,
+          "A": 1
+        }
+      },
+      "Murder.Components.InteractOnCollisionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.InteractOnCollisionComponent",
+        "OnlyOnce": false,
+        "SendMessageOnExit": false,
+        "SendMessageOnStay": false,
+        "CustomEnterMessages": [
+          {
+            "$type": "Bang.Interactions.InteractiveComponent\u003CHelloMurder.Messages.LoreMessages.LoreOpenInteraction\u003E",
+            "interaction": {}
+          }
+        ],
+        "CustomExitMessages": [
+          {
+            "$type": "Bang.Interactions.InteractiveComponent\u003CHelloMurder.Messages.LoreMessages.LoreExitInteraction\u003E",
+            "interaction": {}
+          }
+        ],
+        "PlayerOnly": false
+      },
+      "Murder.Interactions.InteractorComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Interactions.InteractorComponent"
+      },
+      "HelloMurder.Components.LoreInteractableComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "HelloMurder.Components.LoreInteractableComponent",
+        "LoreSnippet": "There\u0027s a little mismatch in the floor tiling between the top and the bottom of the hallway. I wasn\u0027t sure if I should line them up so the tiles match, or if that would cause trouble with the alignment of the other rooms down the road. So I\u0027ve just left it as is There\u0027s also a little visual bug crossing from the upper left room into the storage room, but I\u0027m pretty sure that\u0027s just because the old room is still using the tilemapI had to tweak the colliders for the side hallways just slightly to make them big enough for our character to get through"
+      }
+    }
+  }
+}
