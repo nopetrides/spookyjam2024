@@ -23,7 +23,8 @@
       "223f8836-1834-4da3-9108-8f4ef1245a3d",
       "0c39fe43-6d40-4376-8401-de07948198ca",
       "d608544f-b02d-4a71-b0a0-d5db9998b957",
-      "3470d27e-71db-4e47-8e82-bc24ac48b8d3"
+      "3470d27e-71db-4e47-8e82-bc24ac48b8d3",
+      "e8cb3e0f-f7ab-4409-adc3-c7f295ec7c36"
     ],
     "FirstLabRoom": [
       "133617b5-c7e0-40e2-8b5f-f47b48e1e22b",
@@ -1554,6 +1555,56 @@
       },
       "guid": "1ea825e4-33d6-4c47-87eb-7439df38e332",
       "name": "Storage room"
+    },
+    "e8cb3e0f-f7ab-4409-adc3-c7f295ec7c36": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "cfb4b91e-7baa-4da1-b56e-1e8fb7972a63"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 479,
+          "y": 591
+        },
+        "HelloMurder.Components.LoreInteractableComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "HelloMurder.Components.LoreInteractableComponent",
+          "LoreSnippet": "Inventory Log Dr. Yanna Bateman X5 CentrifugesX3 BalancesX5 MicroscopesX3 Set Beakers *need more*X10 Boxes of GlovesX3 HotplatesX2 pH MetersX2 ThermometersSigning Technician: Dr. Yanna BatemanDate: 3/02/72",
+          "ScreenSide": 0
+        }
+      },
+      "guid": "e8cb3e0f-f7ab-4409-adc3-c7f295ec7c36",
+      "name": "LoreInteractable"
+    },
+    "1d68beee-20e4-4679-91de-47ad6314c1d0": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "cfb4b91e-7baa-4da1-b56e-1e8fb7972a63"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 612,
+          "y": 592
+        },
+        "HelloMurder.Components.LoreInteractableComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "HelloMurder.Components.LoreInteractableComponent",
+          "LoreSnippet": "M.Sc. Alyric Leeman 10/02/72Hello, these are the musing of Apollo Site Lab Technician, Alyric Leeman. I have been herefor one year and\u2026 I\u2019ve expected more. Security screenings, a private flight and a helicopterride up north to this lab. I thought this was the \u201Cin\u201D on groundbreaking research to helppeople. That is what they told me at least. I can\u2019t contact loved ones, and they can\u2019tcontact me\u2026 I miss my dog\u2026 I love you Cujo. I know I signed an NDA, but these noteswon\u2019t leave the facility let alone storage so screw it. Better to pass the time this way thanlooking at boxes of gloves.",
+          "ScreenSide": 1
+        }
+      },
+      "guid": "1d68beee-20e4-4679-91de-47ad6314c1d0",
+      "name": "LoreInteractable"
     }
   },
   "entitiesToFolder": {
@@ -1576,7 +1627,8 @@
     "0c39fe43-6d40-4376-8401-de07948198ca": "MainHallRoom",
     "d608544f-b02d-4a71-b0a0-d5db9998b957": "MainHallRoom",
     "3470d27e-71db-4e47-8e82-bc24ac48b8d3": "MainHallRoom",
-    "1ea825e4-33d6-4c47-87eb-7439df38e332": "StorageRoom"
+    "1ea825e4-33d6-4c47-87eb-7439df38e332": "StorageRoom",
+    "e8cb3e0f-f7ab-4409-adc3-c7f295ec7c36": "MainHallRoom"
   },
   "entitiesToFilter": {}
 }
