@@ -24,7 +24,8 @@
       "0c39fe43-6d40-4376-8401-de07948198ca",
       "d608544f-b02d-4a71-b0a0-d5db9998b957",
       "3470d27e-71db-4e47-8e82-bc24ac48b8d3",
-      "e8cb3e0f-f7ab-4409-adc3-c7f295ec7c36"
+      "e8cb3e0f-f7ab-4409-adc3-c7f295ec7c36",
+      "484c1ba9-5f47-4e0c-8ff6-28710d7e9f4d"
     ],
     "FirstLabRoom": [
       "133617b5-c7e0-40e2-8b5f-f47b48e1e22b",
@@ -1605,6 +1606,26 @@
       },
       "guid": "1d68beee-20e4-4679-91de-47ad6314c1d0",
       "name": "LoreInteractable"
+    },
+    "484c1ba9-5f47-4e0c-8ff6-28710d7e9f4d": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "e64af6ff-a2a7-4476-b2a2-6b8269b12faa"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 498,
+          "y": 526
+        }
+      },
+      "guid": "484c1ba9-5f47-4e0c-8ff6-28710d7e9f4d",
+      "name": "AhhhMonster"
     }
   },
   "entitiesToFolder": {
@@ -1628,7 +1649,8 @@
     "d608544f-b02d-4a71-b0a0-d5db9998b957": "MainHallRoom",
     "3470d27e-71db-4e47-8e82-bc24ac48b8d3": "MainHallRoom",
     "1ea825e4-33d6-4c47-87eb-7439df38e332": "StorageRoom",
-    "e8cb3e0f-f7ab-4409-adc3-c7f295ec7c36": "MainHallRoom"
+    "e8cb3e0f-f7ab-4409-adc3-c7f295ec7c36": "MainHallRoom",
+    "484c1ba9-5f47-4e0c-8ff6-28710d7e9f4d": "MainHallRoom"
   },
   "entitiesToFilter": {}
 }
