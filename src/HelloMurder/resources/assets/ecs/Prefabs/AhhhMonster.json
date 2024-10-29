@@ -1,0 +1,123 @@
+{
+  "$type": "Murder.Assets.PrefabAsset",
+  "ShowOnPrefabSelector": true,
+  "Dimensions": {
+    "Origin": {
+      "X": 0,
+      "Y": 0
+    },
+    "Size": {
+      "X": 1,
+      "Y": 1
+    }
+  },
+  "Name": "AhhhMonster",
+  "Guid": "e64af6ff-a2a7-4476-b2a2-6b8269b12faa",
+  "entity": {
+    "IsDeactivated": false,
+    "ActivateWithParent": false,
+    "guid": "2119b3d4-dcb3-4086-94d9-a0209690c21d",
+    "name": "",
+    "components": {
+      "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.PositionComponent",
+        "x": 0,
+        "y": 0
+      },
+      "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.ColliderComponent",
+        "Shapes": [
+          {
+            "$type": "Murder.Core.Geometry.CircleShape",
+            "Radius": 8,
+            "Offset": {
+              "X": 0,
+              "Y": 0
+            }
+          }
+        ],
+        "Layer": 15,
+        "DebugColor": {
+          "R": 1,
+          "G": 0,
+          "B": 0,
+          "A": 1
+        }
+      },
+      "Murder.Components.AgentComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.AgentComponent",
+        "Speed": 100,
+        "Acceleration": 150,
+        "Friction": 0.927
+      },
+      "Murder.Components.FacingComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.FacingComponent",
+        "Angle": 0,
+        "direction": 0
+      },
+      "Murder.Components.AgentSpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.AgentSpriteComponent",
+        "AnimationGuid": "1c823480-818b-7a22-e40e-b0a77c451f5a",
+        "YSortOffset": 24,
+        "TargetSpriteBatch": 0,
+        "IdlePrefix": "idle_",
+        "WalkPrefix": "walk_"
+      },
+      "Murder.Components.SpriteFacingComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.SpriteFacingComponent",
+        "AngleStart": -0.3926991,
+        "DefaultSuffix": "ne",
+        "DefaultFlip": false,
+        "FacingInfo": [
+          {
+            "AngleSize": 0.7853982,
+            "Suffix": "e",
+            "Flip": false
+          },
+          {
+            "AngleSize": 0.7853982,
+            "Suffix": "se",
+            "Flip": false
+          },
+          {
+            "AngleSize": 0.7853982,
+            "Suffix": "s",
+            "Flip": false
+          },
+          {
+            "AngleSize": 0.7853982,
+            "Suffix": "se",
+            "Flip": true
+          },
+          {
+            "AngleSize": 0.7853982,
+            "Suffix": "e",
+            "Flip": true
+          },
+          {
+            "AngleSize": 0.7853982,
+            "Suffix": "ne",
+            "Flip": true
+          },
+          {
+            "AngleSize": 0.7853982,
+            "Suffix": "n",
+            "Flip": false
+          }
+        ]
+      },
+      "Murder.Components.InteractOnCollisionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.InteractOnCollisionComponent",
+        "OnlyOnce": false,
+        "SendMessageOnExit": false,
+        "SendMessageOnStay": false,
+        "CustomEnterMessages": [],
+        "CustomExitMessages": [],
+        "PlayerOnly": false
+      },
+      "Murder.Interactions.InteractorComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Interactions.InteractorComponent"
+      }
+    }
+  }
+}
