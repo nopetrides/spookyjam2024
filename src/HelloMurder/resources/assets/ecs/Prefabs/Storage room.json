@@ -1,0 +1,147 @@
+{
+  "$type": "Murder.Assets.PrefabAsset",
+  "ShowOnPrefabSelector": false,
+  "Dimensions": {
+    "Origin": {
+      "X": 0,
+      "Y": 0
+    },
+    "Size": {
+      "X": 0,
+      "Y": 0
+    }
+  },
+  "Name": "Storage room",
+  "Guid": "c09d7616-6e59-4e53-80b0-b382a9dc9768",
+  "entity": {
+    "IsDeactivated": false,
+    "ActivateWithParent": false,
+    "guid": "56a8dc48-7c2e-47c1-a1b4-f8916760e73f",
+    "name": "",
+    "components": {
+      "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.SpriteComponent",
+        "TargetSpriteBatch": 0,
+        "AnimationGuid": "ac82a23a-8143-19af-8a48-27fa8a5af2fb",
+        "HighlightStyle": 0,
+        "NextAnimations": [],
+        "YSortOffset": 0,
+        "Offset": {
+          "X": 0,
+          "Y": 0
+        },
+        "RotateWithFacing": false,
+        "FlipWithFacing": false,
+        "UseUnscaledTime": false
+      },
+      "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.PositionComponent",
+        "x": 0,
+        "y": 0
+      },
+      "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.ColliderComponent",
+        "Shapes": [
+          {
+            "$type": "Murder.Core.Geometry.BoxShape",
+            "Offset": {
+              "X": 0,
+              "Y": 0
+            },
+            "Width": 82,
+            "Height": 31,
+            "Origin": {
+              "X": 0,
+              "Y": 0
+            }
+          },
+          {
+            "$type": "Murder.Core.Geometry.BoxShape",
+            "Offset": {
+              "X": 110,
+              "Y": 0
+            },
+            "Width": 176,
+            "Height": 31,
+            "Origin": {
+              "X": 0,
+              "Y": 0
+            }
+          },
+          {
+            "$type": "Murder.Core.Geometry.BoxShape",
+            "Offset": {
+              "X": 0,
+              "Y": 30
+            },
+            "Width": 18,
+            "Height": 149,
+            "Origin": {
+              "X": 0,
+              "Y": 0
+            }
+          },
+          {
+            "$type": "Murder.Core.Geometry.BoxShape",
+            "Offset": {
+              "X": 18,
+              "Y": 157
+            },
+            "Width": 123,
+            "Height": 22,
+            "Origin": {
+              "X": 0,
+              "Y": 0
+            }
+          },
+          {
+            "$type": "Murder.Core.Geometry.BoxShape",
+            "Offset": {
+              "X": 286,
+              "Y": 0
+            },
+            "Width": 34,
+            "Height": 41,
+            "Origin": {
+              "X": 0,
+              "Y": 0
+            }
+          },
+          {
+            "$type": "Murder.Core.Geometry.BoxShape",
+            "Offset": {
+              "X": 286,
+              "Y": 62
+            },
+            "Width": 34,
+            "Height": 118,
+            "Origin": {
+              "X": 0,
+              "Y": 0
+            }
+          },
+          {
+            "$type": "Murder.Core.Geometry.BoxShape",
+            "Offset": {
+              "X": 141,
+              "Y": 77
+            },
+            "Width": 145,
+            "Height": 103,
+            "Origin": {
+              "X": 0,
+              "Y": 0
+            }
+          }
+        ],
+        "Layer": 1,
+        "DebugColor": {
+          "R": 0.99609375,
+          "G": 0.47265625,
+          "B": 0.7734375,
+          "A": 1
+        }
+      }
+    }
+  }
+}

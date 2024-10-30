@@ -1,0 +1,13 @@
+{
+  "$type": "Murder.Assets.FeatureAsset",
+  "IsDiagnostics": false,
+  "Name": "Monster",
+  "Guid": "f823f642-fb1e-4a0a-85c0-47acf32d3c8e",
+  "systems": [
+    {
+      "Item1": "HelloMurder.Systems.Player.moveToPlayer, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Item2": true
+    }
+  ],
+  "features": []
+}
