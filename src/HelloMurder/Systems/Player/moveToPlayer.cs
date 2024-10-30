@@ -31,7 +31,7 @@ namespace HelloMurder.Systems.Player
             {
                 var enemyPos = enemy.GetGlobalTransform().ToVector2();
                 var dirtoplayer = (playerPos - enemyPos).Normalized();
-                enemy.SetAgentImpulse(dirtoplayer);
+                //enemy.SetAgentImpulse(dirtoplayer);
             }
         }
     }
