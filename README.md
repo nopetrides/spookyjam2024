@@ -1,3 +1,13 @@
+Spooky Gam Jam 2024
+
+Tunes used:
+https://itch.io/jam/tunejam-5a/rate/3039885
+https://itch.io/jam/tunejam-5a/rate/3026677
+https://itch.io/jam/tunejam-5a/rate/3040532
+https://itch.io/jam/tunejam-5a/rate/3033534
+
+
+
 <p align="center">
 <img width="450" src=".github/images/murder_logo.png" alt="Murder logo">
 </p>
