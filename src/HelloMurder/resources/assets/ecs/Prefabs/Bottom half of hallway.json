@@ -22,7 +22,7 @@
       "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.SpriteComponent",
         "TargetSpriteBatch": 0,
-        "AnimationGuid": "c1493b69-fec4-08bf-7d4e-b4dc7defad9f",
+        "AnimationGuid": "f4f6eb1c-a59a-24a4-d95e-89d87210fa10",
         "HighlightStyle": 0,
         "NextAnimations": [],
         "YSortOffset": 0,

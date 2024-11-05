@@ -19,13 +19,16 @@
       "fc3ef0f7-b77a-4641-a9c9-f0a02d38cabc",
       "7605d074-372d-4d7c-8465-d0b0363fd057",
       "900331a5-7e1b-4a66-b529-9ba81ebb06b1",
-      "b8fd3f1d-33f7-4159-a858-2702ab4e9721",
-      "223f8836-1834-4da3-9108-8f4ef1245a3d",
-      "0c39fe43-6d40-4376-8401-de07948198ca",
       "d608544f-b02d-4a71-b0a0-d5db9998b957",
       "3470d27e-71db-4e47-8e82-bc24ac48b8d3",
       "e8cb3e0f-f7ab-4409-adc3-c7f295ec7c36",
-      "484c1ba9-5f47-4e0c-8ff6-28710d7e9f4d"
+      "484c1ba9-5f47-4e0c-8ff6-28710d7e9f4d",
+      "242761dd-cf96-4458-9f72-41c8aa9f560d",
+      "01f77eb3-5a39-4c18-8702-917f505a46e5",
+      "9fe7f6bb-51c5-4576-ad31-d14454a43213",
+      "5d803998-785b-4ae3-9a1e-eb25697474d5",
+      "c792df65-3b4f-44fa-9111-9ee42852543d",
+      "5290cae5-8293-4302-adc5-54122d19b8f5"
     ],
     "FirstLabRoom": [
       "133617b5-c7e0-40e2-8b5f-f47b48e1e22b",
@@ -36,14 +39,32 @@
     ],
     "TheOtherLabRoom": [
       "57da0b19-8123-4dd0-a88e-f93254fc7823",
+      "0c39fe43-6d40-4376-8401-de07948198ca",
       "07da213f-7bee-4234-8594-a311b7d99f75",
-      "c52e4bf5-8cab-4953-b48d-59691aa5ed42"
+      "c52e4bf5-8cab-4953-b48d-59691aa5ed42",
+      "2dbc0ecd-1ba4-4229-9c81-8a108a04c331",
+      "e987bb1e-f2b0-48f2-8024-95fdce25bc30",
+      "5546603d-184d-4b9e-a355-57661026f2f6",
+      "eeed4f01-c3a5-41db-8410-9fa9d6dc667b",
+      "87e79bd1-24cb-417e-bf07-680701b9b40a",
+      "cc979276-5c30-4b77-b2e2-df7ad2bb5c85",
+      "688e1a8b-2bbf-4e8c-8c9c-6a43b0991356",
+      "b9741f33-d173-4ebb-adb3-224866f1d446",
+      "cbf6ae5e-6b49-48e8-9dd4-c0b0abdecf3d",
+      "d8d9f9da-0324-480c-a5ad-db77742cfc2e",
+      "78675775-f2d3-4731-8ddf-87d1ef6edd50",
+      "982b57de-d23a-4fee-9ae5-8b97d532059e",
+      "202e9530-dedb-48dd-854f-27ba9c01be0b"
     ],
     "StorageRoom": [
       "c292743a-1e77-411a-81f4-dae811fd0a5f",
       "d2bbbe20-0b95-4007-96df-21f9d1ba76d3",
       "a5ec7a7d-ab71-4fdd-badb-fabf82590b8e",
-      "1ea825e4-33d6-4c47-87eb-7439df38e332"
+      "1ea825e4-33d6-4c47-87eb-7439df38e332",
+      "2b5ccc4a-4c42-447f-8ba4-1306e7e6cfb2",
+      "0befe381-a410-480d-aff5-cbc19bdff271",
+      "8eac0e48-2b0a-4a65-82c3-423d7fd86d96",
+      "0966eeb6-bafd-445f-b076-065b106eaf3f"
     ]
   },
   "filterFolders": {},
@@ -62,7 +83,7 @@
         "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.PositionComponent",
           "x": 558,
-          "y": 532
+          "y": 528
         }
       },
       "guid": "220b08d1-2193-4cfa-800f-8582eba2c0df",
@@ -355,8 +376,8 @@
       "components": {
         "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.PositionComponent",
-          "x": 70,
-          "y": 125
+          "x": 523,
+          "y": 711
         },
         "HelloMurder.Components.DialogueUiComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "HelloMurder.Components.DialogueUiComponent",
@@ -1325,10 +1346,10 @@
       "guid": "900331a5-7e1b-4a66-b529-9ba81ebb06b1",
       "name": "DoorTriggerInteractable_Another"
     },
-    "b8fd3f1d-33f7-4159-a858-2702ab4e9721": {
+    "5546603d-184d-4b9e-a355-57661026f2f6": {
       "$type": "Murder.Prefabs.PrefabEntityInstance",
       "PrefabRef": {
-        "Guid": "e9dc3bed-017c-455d-a7e6-707420e6724b"
+        "Guid": "8ffb9f06-c9f2-47aa-a9de-d1a80419e4b4"
       },
       "IsDeactivated": false,
       "ActivateWithParent": false,
@@ -1338,72 +1359,47 @@
       "components": {
         "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.PositionComponent",
-          "x": 454,
-          "y": 451
-        },
-        "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-          "$type": "Murder.Components.ColliderComponent",
-          "Shapes": [
-            {
-              "$type": "Murder.Core.Geometry.BoxShape",
-              "Offset": {
-                "X": 1,
-                "Y": 9
-              },
-              "Width": 36,
-              "Height": 4,
-              "Origin": {
-                "X": 0,
-                "Y": 0
-              }
-            }
-          ],
-          "Layer": 1,
-          "DebugColor": {
-            "R": 0.99609375,
-            "G": 0.47265625,
-            "B": 0.7734375,
-            "A": 1
-          }
-        }
-      },
-      "guid": "b8fd3f1d-33f7-4159-a858-2702ab4e9721",
-      "name": "Desk"
-    },
-    "223f8836-1834-4da3-9108-8f4ef1245a3d": {
-      "$type": "Murder.Prefabs.PrefabEntityInstance",
-      "PrefabRef": {
-        "Guid": "125bea23-f562-4b5f-814b-c9f8a7c728be"
-      },
-      "IsDeactivated": false,
-      "ActivateWithParent": false,
-      "removeComponent": [],
-      "childrenModifiers": {},
-      "ignorePrefabChildren": false,
-      "components": {
-        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-          "$type": "Murder.Components.PositionComponent",
-          "x": 457,
-          "y": 440
+          "x": 216,
+          "y": 400
         },
         "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.SpriteComponent",
           "TargetSpriteBatch": 0,
-          "AnimationGuid": "ddb9815f-79a1-8a17-b602-5ffcdf9a2521",
+          "AnimationGuid": "10f64e1c-7df6-e3f6-c052-63c6818a50f6",
           "HighlightStyle": 0,
           "NextAnimations": [],
-          "YSortOffset": 16,
+          "YSortOffset": 8,
           "Offset": {
-            "X": 0.118,
-            "Y": 0.216
+            "X": 0.03,
+            "Y": 0.196
           },
           "RotateWithFacing": false,
           "FlipWithFacing": false,
           "UseUnscaledTime": false
         }
       },
-      "guid": "223f8836-1834-4da3-9108-8f4ef1245a3d",
-      "name": "Computer"
+      "guid": "5546603d-184d-4b9e-a355-57661026f2f6",
+      "name": "Counters"
+    },
+    "e987bb1e-f2b0-48f2-8024-95fdce25bc30": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "3767d171-8bec-4b9f-920b-d42df73316b0"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 254,
+          "y": 438
+        }
+      },
+      "guid": "e987bb1e-f2b0-48f2-8024-95fdce25bc30",
+      "name": "Table2"
     },
     "0c39fe43-6d40-4376-8401-de07948198ca": {
       "$type": "Murder.Prefabs.PrefabEntityInstance",
@@ -1418,8 +1414,8 @@
       "components": {
         "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.PositionComponent",
-          "x": 495,
-          "y": 531
+          "x": 287,
+          "y": 538
         },
         "Murder.Components.RotationComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.RotationComponent",
@@ -1442,8 +1438,8 @@
       "components": {
         "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.PositionComponent",
-          "x": 428,
-          "y": 461
+          "x": 290,
+          "y": 456
         },
         "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.SpriteComponent",
@@ -1497,6 +1493,21 @@
           "$type": "Murder.Components.PositionComponent",
           "x": 381,
           "y": 564
+        },
+        "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.SpriteComponent",
+          "TargetSpriteBatch": 0,
+          "AnimationGuid": "f4f6eb1c-a59a-24a4-d95e-89d87210fa10",
+          "HighlightStyle": 0,
+          "NextAnimations": [],
+          "YSortOffset": -5,
+          "Offset": {
+            "X": 0,
+            "Y": 0
+          },
+          "RotateWithFacing": false,
+          "FlipWithFacing": false,
+          "UseUnscaledTime": false
         }
       },
       "guid": "3470d27e-71db-4e47-8e82-bc24ac48b8d3",
@@ -1595,8 +1606,8 @@
       "components": {
         "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.PositionComponent",
-          "x": 612,
-          "y": 592
+          "x": 603,
+          "y": 589
         },
         "HelloMurder.Components.LoreInteractableComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "HelloMurder.Components.LoreInteractableComponent",
@@ -1620,12 +1631,602 @@
       "components": {
         "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.PositionComponent",
-          "x": 498,
-          "y": 526
+          "x": 536,
+          "y": 510
         }
       },
       "guid": "484c1ba9-5f47-4e0c-8ff6-28710d7e9f4d",
       "name": "AhhhMonster"
+    },
+    "01f77eb3-5a39-4c18-8702-917f505a46e5": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "815fa7fd-9aaf-41d1-89bd-d20b013decf2"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 448,
+          "y": 496
+        }
+      },
+      "guid": "01f77eb3-5a39-4c18-8702-917f505a46e5",
+      "name": "WoodBench"
+    },
+    "242761dd-cf96-4458-9f72-41c8aa9f560d": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "815fa7fd-9aaf-41d1-89bd-d20b013decf2"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 448,
+          "y": 547
+        },
+        "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.SpriteComponent",
+          "TargetSpriteBatch": 0,
+          "AnimationGuid": "5f91966a-3cc8-f129-272a-6aa31c17cec4",
+          "HighlightStyle": 0,
+          "NextAnimations": [],
+          "YSortOffset": 18,
+          "Offset": {
+            "X": 0.147,
+            "Y": 0.127
+          },
+          "RotateWithFacing": false,
+          "FlipWithFacing": false,
+          "UseUnscaledTime": false
+        }
+      },
+      "guid": "242761dd-cf96-4458-9f72-41c8aa9f560d",
+      "name": "WoodBench"
+    },
+    "9fe7f6bb-51c5-4576-ad31-d14454a43213": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "90e0ffac-2789-45a1-91d4-abf82bc9922b"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 447,
+          "y": 574
+        }
+      },
+      "guid": "9fe7f6bb-51c5-4576-ad31-d14454a43213",
+      "name": "WaterCooler"
+    },
+    "5d803998-785b-4ae3-9a1e-eb25697474d5": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "815fa7fd-9aaf-41d1-89bd-d20b013decf2"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 448,
+          "y": 662
+        }
+      },
+      "guid": "5d803998-785b-4ae3-9a1e-eb25697474d5",
+      "name": "WoodBench"
+    },
+    "c792df65-3b4f-44fa-9111-9ee42852543d": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "598453a5-4f69-4899-b7d9-ed4c26c28a8e"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 619,
+          "y": 539
+        }
+      },
+      "guid": "c792df65-3b4f-44fa-9111-9ee42852543d",
+      "name": "Lockers"
+    },
+    "5290cae5-8293-4302-adc5-54122d19b8f5": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "f069df71-aa4e-4a7f-a05f-22e4de844349"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 559,
+          "y": 677
+        }
+      },
+      "guid": "5290cae5-8293-4302-adc5-54122d19b8f5",
+      "name": "ReceptionDesk"
+    },
+    "744ffeba-65e4-42f4-bd45-b49151a3b4ac": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "77b37104-e9ab-449a-b860-63ad3baef30a"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 591,
+          "y": 699
+        }
+      },
+      "guid": "744ffeba-65e4-42f4-bd45-b49151a3b4ac",
+      "name": "ChairLight"
+    },
+    "2b5ccc4a-4c42-447f-8ba4-1306e7e6cfb2": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "cf2a180f-d672-445f-869a-70ff1cad15a1"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 198,
+          "y": 562
+        }
+      },
+      "guid": "2b5ccc4a-4c42-447f-8ba4-1306e7e6cfb2",
+      "name": "StorageShelf"
+    },
+    "0befe381-a410-480d-aff5-cbc19bdff271": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "459a7eac-781e-4a55-8be8-622996dbcad6"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 172,
+          "y": 669
+        }
+      },
+      "guid": "0befe381-a410-480d-aff5-cbc19bdff271",
+      "name": "CreatureChamberEmpty1"
+    },
+    "8eac0e48-2b0a-4a65-82c3-423d7fd86d96": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "28814372-9f66-4a14-a9d1-eec4486d4a90"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 151,
+          "y": 681
+        },
+        "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.SpriteComponent",
+          "TargetSpriteBatch": 0,
+          "AnimationGuid": "5290b6f2-a954-802a-cb8c-33bcb3c26757",
+          "HighlightStyle": 0,
+          "NextAnimations": [],
+          "YSortOffset": 7,
+          "Offset": {
+            "X": 0.118,
+            "Y": 0.137
+          },
+          "RotateWithFacing": false,
+          "FlipWithFacing": false,
+          "UseUnscaledTime": false
+        }
+      },
+      "guid": "8eac0e48-2b0a-4a65-82c3-423d7fd86d96",
+      "name": "CreatureChamberEmpty2"
+    },
+    "2dbc0ecd-1ba4-4229-9c81-8a108a04c331": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "68549134-c559-4476-8a39-331b23c87af2"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 123,
+          "y": 411
+        }
+      },
+      "guid": "2dbc0ecd-1ba4-4229-9c81-8a108a04c331",
+      "name": "BrokenCreatureContainer"
+    },
+    "0966eeb6-bafd-445f-b076-065b106eaf3f": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "6f9858e7-6cb6-4d05-8271-a4ea8a24458c"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 79,
+          "y": 593
+        }
+      },
+      "guid": "0966eeb6-bafd-445f-b076-065b106eaf3f",
+      "name": "Shelf2"
+    },
+    "eeed4f01-c3a5-41db-8410-9fa9d6dc667b": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "8ffb9f06-c9f2-47aa-a9de-d1a80419e4b4"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 283,
+          "y": 400
+        },
+        "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.SpriteComponent",
+          "TargetSpriteBatch": 0,
+          "AnimationGuid": "10f64e1c-7df6-e3f6-c052-63c6818a50f6",
+          "HighlightStyle": 0,
+          "NextAnimations": [],
+          "YSortOffset": 8,
+          "Offset": {
+            "X": 0.03,
+            "Y": 0.196
+          },
+          "RotateWithFacing": false,
+          "FlipWithFacing": false,
+          "UseUnscaledTime": false
+        }
+      },
+      "guid": "eeed4f01-c3a5-41db-8410-9fa9d6dc667b",
+      "name": "Counters"
+    },
+    "87e79bd1-24cb-417e-bf07-680701b9b40a": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "2eb39019-b3c0-41db-b9e1-0594ff8e9ddd"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 273,
+          "y": 514
+        }
+      },
+      "guid": "87e79bd1-24cb-417e-bf07-680701b9b40a",
+      "name": "Table1"
+    },
+    "cc979276-5c30-4b77-b2e2-df7ad2bb5c85": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "9b42784e-4668-4c46-a4b5-e4f1281b1f1a"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 265,
+          "y": 396
+        },
+        "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.SpriteComponent",
+          "TargetSpriteBatch": 0,
+          "AnimationGuid": "cceb0ac5-c1fb-ab50-aab1-1676404e3f64",
+          "HighlightStyle": 0,
+          "NextAnimations": [],
+          "YSortOffset": 16,
+          "Offset": {
+            "X": 0.157,
+            "Y": 0.157
+          },
+          "RotateWithFacing": false,
+          "FlipWithFacing": false,
+          "UseUnscaledTime": false
+        }
+      },
+      "guid": "cc979276-5c30-4b77-b2e2-df7ad2bb5c85",
+      "name": "BeakerEmpty"
+    },
+    "688e1a8b-2bbf-4e8c-8c9c-6a43b0991356": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "db221e0d-74a2-43ea-9a76-8d9d25f78b0b"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 290,
+          "y": 396
+        },
+        "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.SpriteComponent",
+          "TargetSpriteBatch": 0,
+          "AnimationGuid": "3960fa61-c8f3-a08f-9256-7aafc962d9bb",
+          "HighlightStyle": 0,
+          "NextAnimations": [],
+          "YSortOffset": 17,
+          "Offset": {
+            "X": 0.147,
+            "Y": 0.108
+          },
+          "RotateWithFacing": false,
+          "FlipWithFacing": false,
+          "UseUnscaledTime": false
+        }
+      },
+      "guid": "688e1a8b-2bbf-4e8c-8c9c-6a43b0991356",
+      "name": "BeakerFull"
+    },
+    "b9741f33-d173-4ebb-adb3-224866f1d446": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "5234acf7-5231-47c0-9d14-e493e2c3566b"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 249,
+          "y": 395
+        },
+        "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.SpriteComponent",
+          "TargetSpriteBatch": 0,
+          "AnimationGuid": "ba57ab34-234f-775a-5020-89771ceab5b2",
+          "HighlightStyle": 0,
+          "NextAnimations": [],
+          "YSortOffset": 14,
+          "Offset": {
+            "X": 0.059,
+            "Y": 0.069
+          },
+          "RotateWithFacing": false,
+          "FlipWithFacing": false,
+          "UseUnscaledTime": false
+        }
+      },
+      "guid": "b9741f33-d173-4ebb-adb3-224866f1d446",
+      "name": "Flask1"
+    },
+    "cbf6ae5e-6b49-48e8-9dd4-c0b0abdecf3d": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "f202079a-9e5c-425d-95a2-368e280eacc6"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 241,
+          "y": 394
+        },
+        "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.SpriteComponent",
+          "TargetSpriteBatch": 0,
+          "AnimationGuid": "e76a7ad8-d0c6-a177-89f5-eb8a2da46022",
+          "HighlightStyle": 0,
+          "NextAnimations": [],
+          "YSortOffset": 15,
+          "Offset": {
+            "X": 0.088,
+            "Y": 0.078
+          },
+          "RotateWithFacing": false,
+          "FlipWithFacing": false,
+          "UseUnscaledTime": false
+        }
+      },
+      "guid": "cbf6ae5e-6b49-48e8-9dd4-c0b0abdecf3d",
+      "name": "Flask2"
+    },
+    "d8d9f9da-0324-480c-a5ad-db77742cfc2e": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "118b2904-deee-41a4-aeb4-c3b4da5ec7c7"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 307,
+          "y": 394
+        },
+        "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.SpriteComponent",
+          "TargetSpriteBatch": 0,
+          "AnimationGuid": "87facd54-b752-53ea-c9f5-cadbfc87efcc",
+          "HighlightStyle": 0,
+          "NextAnimations": [],
+          "YSortOffset": 15,
+          "Offset": {
+            "X": 0.088,
+            "Y": 0.078
+          },
+          "RotateWithFacing": false,
+          "FlipWithFacing": false,
+          "UseUnscaledTime": false
+        }
+      },
+      "guid": "d8d9f9da-0324-480c-a5ad-db77742cfc2e",
+      "name": "Flask3"
+    },
+    "78675775-f2d3-4731-8ddf-87d1ef6edd50": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "4f1ad899-d8f4-4101-a12a-55c4c45e99d8"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 203,
+          "y": 460
+        },
+        "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.SpriteComponent",
+          "TargetSpriteBatch": 0,
+          "AnimationGuid": "1fe0716f-3839-210c-3c27-e23b12c52aa5",
+          "HighlightStyle": 0,
+          "NextAnimations": [],
+          "YSortOffset": -49,
+          "Offset": {
+            "X": 0.127,
+            "Y": 0.167
+          },
+          "RotateWithFacing": false,
+          "FlipWithFacing": false,
+          "UseUnscaledTime": false
+        }
+      },
+      "guid": "78675775-f2d3-4731-8ddf-87d1ef6edd50",
+      "name": "DirtStainLarge"
+    },
+    "982b57de-d23a-4fee-9ae5-8b97d532059e": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "f55bbb25-2d8e-4dc5-a77f-115bca04b33a"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 266,
+          "y": 442
+        },
+        "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.SpriteComponent",
+          "TargetSpriteBatch": 0,
+          "AnimationGuid": "477967d1-a070-4ed7-dc53-25859e03721d",
+          "HighlightStyle": 0,
+          "NextAnimations": [],
+          "YSortOffset": 18,
+          "Offset": {
+            "X": 0.343,
+            "Y": 0.392
+          },
+          "RotateWithFacing": false,
+          "FlipWithFacing": false,
+          "UseUnscaledTime": false
+        }
+      },
+      "guid": "982b57de-d23a-4fee-9ae5-8b97d532059e",
+      "name": "TestTubeRack"
+    },
+    "202e9530-dedb-48dd-854f-27ba9c01be0b": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance",
+      "PrefabRef": {
+        "Guid": "0c9991ab-98f3-45a2-ad2a-d47ede9035d9"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "removeComponent": [],
+      "childrenModifiers": {},
+      "ignorePrefabChildren": false,
+      "components": {
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent",
+          "x": 259,
+          "y": 449
+        }
+      },
+      "guid": "202e9530-dedb-48dd-854f-27ba9c01be0b",
+      "name": "Papers"
     }
   },
   "entitiesToFolder": {
@@ -1643,14 +2244,35 @@
     "c52e4bf5-8cab-4953-b48d-59691aa5ed42": "TheOtherLabRoom",
     "a5ec7a7d-ab71-4fdd-badb-fabf82590b8e": "StorageRoom",
     "900331a5-7e1b-4a66-b529-9ba81ebb06b1": "MainHallRoom",
-    "b8fd3f1d-33f7-4159-a858-2702ab4e9721": "MainHallRoom",
-    "223f8836-1834-4da3-9108-8f4ef1245a3d": "MainHallRoom",
-    "0c39fe43-6d40-4376-8401-de07948198ca": "MainHallRoom",
+    "5546603d-184d-4b9e-a355-57661026f2f6": "TheOtherLabRoom",
+    "e987bb1e-f2b0-48f2-8024-95fdce25bc30": "TheOtherLabRoom",
+    "0c39fe43-6d40-4376-8401-de07948198ca": "TheOtherLabRoom",
     "d608544f-b02d-4a71-b0a0-d5db9998b957": "MainHallRoom",
     "3470d27e-71db-4e47-8e82-bc24ac48b8d3": "MainHallRoom",
     "1ea825e4-33d6-4c47-87eb-7439df38e332": "StorageRoom",
     "e8cb3e0f-f7ab-4409-adc3-c7f295ec7c36": "MainHallRoom",
-    "484c1ba9-5f47-4e0c-8ff6-28710d7e9f4d": "MainHallRoom"
+    "484c1ba9-5f47-4e0c-8ff6-28710d7e9f4d": "MainHallRoom",
+    "01f77eb3-5a39-4c18-8702-917f505a46e5": "MainHallRoom",
+    "9fe7f6bb-51c5-4576-ad31-d14454a43213": "MainHallRoom",
+    "242761dd-cf96-4458-9f72-41c8aa9f560d": "MainHallRoom",
+    "5d803998-785b-4ae3-9a1e-eb25697474d5": "MainHallRoom",
+    "c792df65-3b4f-44fa-9111-9ee42852543d": "MainHallRoom",
+    "5290cae5-8293-4302-adc5-54122d19b8f5": "MainHallRoom",
+    "2b5ccc4a-4c42-447f-8ba4-1306e7e6cfb2": "StorageRoom",
+    "0befe381-a410-480d-aff5-cbc19bdff271": "StorageRoom",
+    "8eac0e48-2b0a-4a65-82c3-423d7fd86d96": "StorageRoom",
+    "2dbc0ecd-1ba4-4229-9c81-8a108a04c331": "TheOtherLabRoom",
+    "0966eeb6-bafd-445f-b076-065b106eaf3f": "StorageRoom",
+    "eeed4f01-c3a5-41db-8410-9fa9d6dc667b": "TheOtherLabRoom",
+    "87e79bd1-24cb-417e-bf07-680701b9b40a": "TheOtherLabRoom",
+    "cc979276-5c30-4b77-b2e2-df7ad2bb5c85": "TheOtherLabRoom",
+    "688e1a8b-2bbf-4e8c-8c9c-6a43b0991356": "TheOtherLabRoom",
+    "b9741f33-d173-4ebb-adb3-224866f1d446": "TheOtherLabRoom",
+    "cbf6ae5e-6b49-48e8-9dd4-c0b0abdecf3d": "TheOtherLabRoom",
+    "d8d9f9da-0324-480c-a5ad-db77742cfc2e": "TheOtherLabRoom",
+    "78675775-f2d3-4731-8ddf-87d1ef6edd50": "TheOtherLabRoom",
+    "982b57de-d23a-4fee-9ae5-8b97d532059e": "TheOtherLabRoom",
+    "202e9530-dedb-48dd-854f-27ba9c01be0b": "TheOtherLabRoom"
   },
   "entitiesToFilter": {}
 }
